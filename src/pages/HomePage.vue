@@ -2,7 +2,7 @@
 
 
 <template>
-  <h1 class="">Focus Massage</h1>
+  <h1 class="text-fm-blue">Focus Massage</h1>
   NewVueTemplate
 </template>
 

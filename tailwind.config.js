@@ -1,5 +1,4 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
-// import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -20,7 +19,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Exo 2"', ...defaultTheme.fontFamily.sans],
+        sans: ['Funnel Sans', ...defaultTheme.fontFamily.sans],
+        serif: ['Tinos', ...defaultTheme.fontFamily.serif],
       },
     },
   },
