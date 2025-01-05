@@ -1,13 +1,22 @@
 <template>
-  <header class="sticky-top">
-    <NavBar />
-  </header>
-  <main>
+
+  <GlobalLayout>
+    <template #header>
+      <NavBar />
+    </template>
+
+
     <RouterView />
-  </main>
+
+    <template #footer>
+      Footer
+    </template>
+
+  </GlobalLayout>
 </template>
 
 <script setup>
+import GlobalLayout from './layouts/GlobalLayout.vue'
 import { RouterView } from 'vue-router'
 import NavBar from "./components/NavBar.vue";
 
