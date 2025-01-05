@@ -16,9 +16,9 @@
 </template>
 
 <script setup>
+import NavBar from "./components/NavBar.vue";
 import GlobalLayout from './layouts/GlobalLayout.vue'
 import { RouterView } from 'vue-router'
-import NavBar from "./components/NavBar.vue";
 
 </script>
 

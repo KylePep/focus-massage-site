@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="width" height="heigh" viewBox="0 0 300 489"
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 300 489"
     preserveAspectRatio="xMidYMid meet" fill="currentColor">
     <g transform="translate(0.000000,489.000000) scale(0.050000,-0.050000)">
       <path d="M3172 9639 c-781 -448 -1010 -856 -1362 -2419 -249 -1108 -482 -1940
