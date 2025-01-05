@@ -1,22 +1,27 @@
 <template>
 
   <GlobalLayout>
-    <template #header>
+    <template #nav>
       <NavBar />
+    </template>
+
+    <template #header>
+      Header
     </template>
 
 
     <RouterView />
 
     <template #footer>
-      Footer
+      <FooterContent />
     </template>
 
   </GlobalLayout>
 </template>
 
 <script setup>
-import NavBar from "./components/NavBar.vue";
+import FooterContent from "./components/FooterContent.vue";
+import NavBar from "./components/Nav/NavBar.vue";
 import GlobalLayout from './layouts/GlobalLayout.vue'
 import { RouterView } from 'vue-router'
 

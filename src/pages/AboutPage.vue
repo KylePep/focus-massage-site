@@ -2,7 +2,7 @@
 
 
 <template>
-  <h1 class="text-fm-blue">Focus Massage Home</h1>
+  <h1 class="text-fm-blue">Focus Massage About</h1>
 </template>
 
 
