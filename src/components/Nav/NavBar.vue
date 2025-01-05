@@ -25,10 +25,10 @@ onUnmounted(() => {
 
 
 <template>
-  <nav>
+  <nav class="duration-1000 py-4">
 
     <!-- Primary Navigation Menu -->
-    <div class="relative flex justify-between h-16 mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative flex justify-between h-16 mx-auto px-4 sm:px-6 lg:px-8 ">
 
       <!-- Logo -->
       <div class="flex w-full -my-2">

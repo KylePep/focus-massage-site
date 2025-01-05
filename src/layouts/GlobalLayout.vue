@@ -25,7 +25,8 @@ onUnmounted(() => {
       <slot name="nav"></slot>
     </nav>
 
-    <header>
+    <header
+      class="h-40 lg:h-32 flex justify-center items-end font-semibold lg:text-xl leading-tight space-x-3 max-w-7xl mx-auto py-6 px-4 lg:px-8 uppercase duration-1000">
       <slot name="header"></slot>
     </header>
 

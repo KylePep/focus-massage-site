@@ -6,7 +6,7 @@
     </template>
 
     <template #header>
-      Header
+      {{ route.name }}
     </template>
 
 
@@ -23,8 +23,9 @@
 import FooterContent from "./components/FooterContent.vue";
 import NavBar from "./components/Nav/NavBar.vue";
 import GlobalLayout from './layouts/GlobalLayout.vue'
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 
+const route = useRoute();
 </script>
 
 <style></style>
