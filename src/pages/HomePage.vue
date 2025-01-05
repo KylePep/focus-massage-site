@@ -2,9 +2,12 @@
 
 
 <template>
-  <h1 class="text-fm-blue">Focus Massage</h1>
-  NewVueTemplate
+  <h1 class="text-fm-blue">Focus Massage Home</h1>
 </template>
 
 
-<style lang="scss" scoped></style>
+<style>
+:root {
+  --main-height: calc(100vh - 32px - 64px);
+}
+</style>
