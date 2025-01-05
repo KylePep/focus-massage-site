@@ -2,6 +2,7 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import NavLink from "./NavLink.vue";
 import { useRoute } from "vue-router";
+import ResponsiveNavLink from "./ResponsiveNavLink.vue";
 
 const route = useRoute();
 
@@ -43,15 +44,6 @@ onUnmounted(() => {
         </NavLink>
       </div>
 
-      <div class="hidden space-x-8 sm:ms-10 sm:flex duration-1000">
-        <!-- Settings Dropdown -->
-        <!-- <NavLink :href="route('login')" :active="route().current('login')">
-    Login
-  </NavLink> -->
-        <!-- <NavLink :href="route('register')" :active="route().current('register')">
-    Register
-  </NavLink> -->
-      </div>
 
       <!-- Hamburger -->
       <div class="-me-2 flex items-center sm:hidden">
@@ -77,15 +69,9 @@ onUnmounted(() => {
       <div class="pt-2 pb-3 space-y-1">
 
         Responsive Links
-        <!-- <ResponsiveNavLink :href="route('login')" :active="route().current('login')">
-          Log In
+        <ResponsiveNavLink href="About" :active="route.name == 'About'">
+          About
         </ResponsiveNavLink>
-        <ResponsiveNavLink :href="route('register')" :active="route().current('register')">
-          Register
-        </ResponsiveNavLink>
-        <ResponsiveNavLink :href="route('calculator')" :active="route().current('calculator')">
-          Calculator
-        </ResponsiveNavLink> -->
       </div>
 
     </div>

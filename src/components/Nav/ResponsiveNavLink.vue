@@ -11,7 +11,7 @@ const classes = computed(() =>
 </script>
 
 <template>
-    <RouterLink :to="href" :class="classes" class="block w-full ps-3 pe-4 py-2 border-l-4">
+    <RouterLink :to="{ name: href }" :class="classes" class="block w-full ps-3 pe-4 py-2 border-l-4">
         <slot />
     </RouterLink>
 </template>
