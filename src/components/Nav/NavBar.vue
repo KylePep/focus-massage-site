@@ -39,10 +39,12 @@ onUnmounted(() => {
     <div class="relative flex justify-between h-16 mx-auto px-4 sm:px-6 lg:px-8 ">
 
       <!-- Logo -->
-      <div class="flex w-full -my-2">
-        <NavLink href="Home" :active="route.name == 'Home'" class="inline-flex items-center px-1 py-1">
+      <div class="flex items-center w-full -my-2">
+        <NavLink href="Home" :active="route.name == 'Home'" class="inline-flex items-center px-1 py-1 me-4">
           <FMIcon class="duration-1000 bg-fm-blue text-fm-orange rounded-full h-16 w-16 p-2" />
         </NavLink>
+        <h1 class="font-serif text-2xl lg:text-4xl">Focus Massage <span class="hidden lg:inline-flex">by Dana</span>
+        </h1>
       </div>
 
       <!-- Navigation Links -->
