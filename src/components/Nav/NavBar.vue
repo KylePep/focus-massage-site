@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
 import NavLink from "./NavLink.vue";
-import { useRoute } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 import ResponsiveNavLink from "./ResponsiveNavLink.vue";
 
 const route = useRoute();
@@ -40,14 +40,20 @@ onUnmounted(() => {
 
       <!-- Logo -->
       <div class="flex items-center w-full -my-2">
-        <NavLink href="Home" :active="route.name == 'Home'" class="inline-flex items-center px-1 py-1 me-4">
+        <RouterLink :to="{ name: 'Home' }" class="inline-flex items-center px-1 py-1 me-4">
           <FMIcon class="duration-1000 bg-fm-blue text-fm-orange rounded-full h-16 w-16 p-2" />
-        </NavLink>
+        </RouterLink>
         <h1 class="font-serif text-2xl lg:text-4xl">Focus Massage <span class="hidden lg:inline-flex">by Dana</span>
         </h1>
       </div>
 
       <!-- Navigation Links -->
+      <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
+        <NavLink href="Home" :active="route.name == 'Home'">
+          Home
+        </NavLink>
+      </div>
+
       <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
         <NavLink href="About" :active="route.name == 'About'">
           About

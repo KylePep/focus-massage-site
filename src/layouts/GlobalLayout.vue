@@ -50,10 +50,10 @@ onUnmounted(() => {
       <slot name="header"></slot>
     </header>
 
-    <main class="grid grid-cols-8 flex-1 mt-10 lg:mt-14 mx-4">
-      <div class="col-span-8 lg:col-span-6 lg:col-start-2">
-        <slot />
-      </div>
+    <main class="flex-1 mt-10 lg:mt-14">
+      <!-- <div class=""> -->
+      <slot />
+      <!-- </div> -->
     </main>
 
     <footer class="mt-20">
