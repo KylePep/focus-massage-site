@@ -32,6 +32,24 @@ onUnmounted(() => {
 
 
 <template>
+  <section class="bg-black text-white py-1">
+    <div class="grid grid-cols-2 max-w-7xl mx-auto text-center lg:text-start">
+      <div class="lg:flex col-span-2 lg:col-span-1">
+        <div class="lg:border-r px-4 my-2">
+          Email us: <span>email@email.com</span>
+        </div>
+        <div class="px-4 my-2">
+          Call us: <span>x-xxx-xxx-xxxx</span>
+        </div>
+      </div>
+
+      <div class="col-span-2 lg:col-span-1 flex justify-center lg:justify-end">
+        <button class="py-1 px-8 bg-white rounded text-black">Book an Appointment</button>
+      </div>
+    </div>
+
+  </section>
+
   <nav class="duration-1000 py-4">
 
     <!-- Primary Navigation Menu -->
@@ -48,6 +66,18 @@ onUnmounted(() => {
       <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
         <NavLink href="About" :active="route.name == 'About'">
           About
+        </NavLink>
+      </div>
+      <!-- Navigation Links -->
+      <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
+        <NavLink href="About" :active="route.name == 'About'">
+          Book
+        </NavLink>
+      </div>
+      <!-- Navigation Links -->
+      <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
+        <NavLink href="About" :active="route.name == 'About'">
+          Contact
         </NavLink>
       </div>
 
