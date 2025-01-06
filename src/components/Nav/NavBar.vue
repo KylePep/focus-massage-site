@@ -85,8 +85,8 @@ onUnmounted(() => {
 
   </nav>
 
-  <button @click="scrollToTop"
-    class="fixed bottom-0 right-0 m-8 bg-blue-500 h-8 w-8 lg:h-12 lg:w-12 lg:text-3xl rounded-full mdi mdi-arrow-up"></button>
+  <button @click="scrollToTop" :class="isAtTop ? 'right-0' : '-right-40'"
+    class="duration-1000 fixed bottom-0 m-8 bg-blue-500 h-8 w-8 lg:h-12 lg:w-12 lg:text-3xl rounded-full mdi mdi-arrow-up"></button>
 </template>
 
 
