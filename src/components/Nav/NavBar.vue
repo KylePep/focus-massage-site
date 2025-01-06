@@ -32,25 +32,8 @@ onUnmounted(() => {
 
 
 <template>
-  <section class="bg-black text-white py-1">
-    <div class="grid grid-cols-2 max-w-7xl mx-auto text-center lg:text-start">
-      <div class="lg:flex col-span-2 lg:col-span-1">
-        <div class="lg:border-r px-4 my-2">
-          Email us: <span>email@email.com</span>
-        </div>
-        <div class="px-4 my-2">
-          Call us: <span>x-xxx-xxx-xxxx</span>
-        </div>
-      </div>
 
-      <div class="col-span-2 lg:col-span-1 flex justify-center lg:justify-end">
-        <button class="py-1 px-8 bg-white rounded text-black">Book an Appointment</button>
-      </div>
-    </div>
-
-  </section>
-
-  <nav class="duration-1000 py-4">
+  <nav class="duration-1000 py-4 w-full bg-white">
 
     <!-- Primary Navigation Menu -->
     <div class="relative flex justify-between h-16 mx-auto px-4 sm:px-6 lg:px-8 ">
@@ -105,9 +88,14 @@ onUnmounted(() => {
     <div :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }" class="sm:hidden">
       <div class="pt-2 pb-3 space-y-1">
 
-        Responsive Links
         <ResponsiveNavLink href="About" :active="route.name == 'About'">
           About
+        </ResponsiveNavLink>
+        <ResponsiveNavLink href="About" :active="route.name == 'About'">
+          Book
+        </ResponsiveNavLink>
+        <ResponsiveNavLink href="About" :active="route.name == 'About'">
+          Contact
         </ResponsiveNavLink>
       </div>
 
