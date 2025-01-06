@@ -2,12 +2,23 @@
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css/skyblue';
 
+
+
 </script>
 
 
 <template>
 
-  <Splide aria-label="My Favorite Images" data-splide='{"type":"loop","perPage":3}'>
+  <Splide aria-label="My Favorite Images" data-splide='{
+    "type": "loop", 
+    "arrows": false, 
+    "autoplay": true, 
+    "interval": 3000, 
+    "perPage": 3, 
+    "breakpoints": {
+      "640": { "perPage": 1 }
+    }
+  }'>
     <SplideSlide>
       <div class="m-4">
         1
