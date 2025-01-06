@@ -3,7 +3,9 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './src/**/*.vue',
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -24,29 +26,32 @@ export default {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        '.text-shadow': {
-          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.25)',
-        },
-        '.text-shadow-md': {
-          textShadow: '3px 3px 6px rgba(0, 0, 0, 0.3)',
-        },
-        '.text-shadow-lg': {
-          textShadow: '4px 4px 8px rgba(0, 0, 0, 0.4)',
-        },
-        '.text-shadow-xl': {
-          textShadow: '5px 5px 9px rgba(0, 0, 0, 0.6)',
-        },
-        '.text-shadow-2xl': {
-          textShadow: '5px 5px 9px rgba(0, 0, 0, 0.8)',
-        },
-        '.text-shadow-none': {
-          textShadow: 'none',
-        },
-      };
+    require('flowbite/plugin'),
+    // function ({ addUtilities }) {
+    //   const newUtilities = {
+    //     '.text-shadow': {
+    //       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.25)',
+    //     },
+    //     '.text-shadow-md': {
+    //       textShadow: '3px 3px 6px rgba(0, 0, 0, 0.3)',
+    //     },
+    //     '.text-shadow-lg': {
+    //       textShadow: '4px 4px 8px rgba(0, 0, 0, 0.4)',
+    //     },
+    //     '.text-shadow-xl': {
+    //       textShadow: '5px 5px 9px rgba(0, 0, 0, 0.6)',
+    //     },
+    //     '.text-shadow-2xl': {
+    //       textShadow: '5px 5px 9px rgba(0, 0, 0, 0.8)',
+    //     },
+    //     '.text-shadow-none': {
+    //       textShadow: 'none',
+    //     },
+    //   };
 
-      addUtilities(newUtilities, ['responsive', 'hover']);
-    },],
+    //   addUtilities(newUtilities, ['responsive', 'hover']);
+    // },
+  ],
+
 }
 

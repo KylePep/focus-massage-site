@@ -2,7 +2,8 @@
 import Categories from "../components/Categories.vue";
 import SalesPitch from "../components/SalesPitch.vue";
 import Services from "../components/Services.vue";
-import SpecialOffer from "../components/SpecialOffer.vue";
+import Offerings from "../components/Offerings.vue";
+import Modal from "../components/Modal.vue";
 
 </script>
 
@@ -17,7 +18,9 @@ import SpecialOffer from "../components/SpecialOffer.vue";
 
     <Services />
 
-    <SpecialOffer />
+    <Offerings />
+
+    <Modal />
 
   </div>
 </template>

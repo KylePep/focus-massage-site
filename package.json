@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdi/font": "7.3.67",
+    "flowbite": "^2.5.2",
     "vue": "^3.5.13",
-    "@mdi/font": "7.3.67"
+    "vue-router": "4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
