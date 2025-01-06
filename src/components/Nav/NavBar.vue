@@ -14,6 +14,13 @@ const handleScroll = () => {
   isAtTop.value = Math.round(window.scrollY);
 }
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
@@ -77,6 +84,9 @@ onUnmounted(() => {
     </div>
 
   </nav>
+
+  <button @click="scrollToTop"
+    class="fixed bottom-0 right-0 m-8 bg-blue-500 h-8 w-8 lg:h-12 lg:w-12 lg:text-3xl rounded-full mdi mdi-arrow-up"></button>
 </template>
 
 

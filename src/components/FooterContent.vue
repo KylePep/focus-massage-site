@@ -74,8 +74,8 @@
         <div class="font-bold text-base lg:text-lg">
           Subscribe To Us
         </div>
-        <p>Get Business news, tip and solutions to your problems from our experts.</p>
-        <div class="flex">
+        <p class="text-xs">Get Business news, tip and solutions to your problems from our experts.</p>
+        <div class="flex min-h-8">
           <input type="text" class="w-full" name="" id="">
           <button class="bg-blue-500 px-8">></button>
         </div>
