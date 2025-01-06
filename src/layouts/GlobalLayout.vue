@@ -5,7 +5,6 @@ const isAtTop = ref(0);
 
 const handleScroll = () => {
   isAtTop.value = Math.round(window.scrollY);
-  console.log(isAtTop.value)
 }
 
 onMounted(() => {
@@ -19,7 +18,7 @@ onUnmounted(() => {
 
 
 <template>
-  <div class="relative flex flex-col bg-page min-h-screen">
+  <div class="relative flex flex-col bg-page min-h-screen overflow-x-hidden">
 
     <section class="bg-black text-white py-1 w-full">
       <div class="grid grid-cols-2 max-w-7xl mx-auto text-center lg:text-start">
@@ -43,7 +42,7 @@ onUnmounted(() => {
       <slot name="nav"></slot>
     </nav>
 
-    <nav class="fixed duration-1000 w-full" :class="!isAtTop ? '-top-80' : 'top-0'">
+    <nav class="fixed duration-1000 w-full z-20" :class="!isAtTop ? '-top-80' : 'top-0'">
       <slot name="nav"></slot>
     </nav>
 
@@ -72,8 +71,8 @@ onUnmounted(() => {
 
     </header>
 
-    <main class="grid grid-cols-6 flex-1 mt-10 lg:mt-14">
-      <div class="col-span-4 col-start-2">
+    <main class="grid grid-cols-8 flex-1 mt-10 lg:mt-14 mx-4">
+      <div class="col-span-8 lg:col-span-6 lg:col-start-2">
         <slot />
       </div>
     </main>

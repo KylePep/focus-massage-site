@@ -1,10 +1,17 @@
-<script setup></script>
+<script setup>
+import Categories from "../components/Categories.vue";
+import SalesPitch from "../components/SalesPitch.vue";
+
+</script>
 
 
 <template>
-  <h1 class="text-fm-blue">Focus Massage Home</h1>
+  <div class="space-y-32 my-8">
+    <Categories />
+
+    <SalesPitch />
+  </div>
 </template>
 
 
-<style>
-</style>
+<style></style>
