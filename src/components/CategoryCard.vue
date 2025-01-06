@@ -13,6 +13,6 @@
     <i class="absolute -right-16 -bottom-16 h-64 w-64 text-transparent group-hover:text-black/10 duration-1000">
       <slot name="icon" />
     </i>
-    <div class="absolute bottom-0 left-0 w-0 group-hover:w-full border-b-4 border-blue-500 duration-1000"></div>
+    <div class="absolute bottom-0 left-0 w-0 group-hover:w-full border-b-2 border-blue-500 duration-1000"></div>
   </section>
 </template>
