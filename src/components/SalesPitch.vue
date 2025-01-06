@@ -1,11 +1,11 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from "vue";
+import { onMounted, onUnmounted, ref, watch } from "vue";
 
 const xOffset = ref(0);
 onMounted(() => {
   const updateOffset = () => {
     const element = document.getElementById("screen-span");
-    const rect = element?.getBoundingClientRect();
+    const rect = element?.getBoundingClientRect() || { x: 0 };
     if (rect.x > 60) {
       xOffset.value = rect?.x || 0;
     }
@@ -20,10 +20,22 @@ onMounted(() => {
   });
 });
 
-const videoPlayer = ref(false);
+const videoPlayerShow = ref(false);
 const close = () => {
-  videoPlayer.value = false;
+  videoPlayerShow.value = false;
 }
+
+watch(
+  () => videoPlayerShow.value,
+  () => {
+    if (videoPlayerShow.value) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      // @ts-ignore
+      document.body.style.overflow = null;
+    }
+  }
+);
 
 </script>
 
@@ -37,7 +49,7 @@ const close = () => {
         src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="">
       <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-        <button @click="videoPlayer = true"
+        <button @click="videoPlayerShow = true"
           class="group z-10 bg-blue-500 h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
             class="mdi mdi-play text-4xl text-white group-hover:text-5xl duration-300"></i>
         </button>
@@ -80,17 +92,17 @@ const close = () => {
     </section>
   </div>
 
-  <div v-show="videoPlayer" class="fixed inset-0 overflow-y-auto z-50" scroll-region>
-    <div v-show="videoPlayer" class="fixed inset-0 transform transition-all" @click="close">
-      <button v-if="videoPlayer" type="button" @click="close"
+  <div v-show="videoPlayerShow" class="fixed inset-0 overflow-y-auto z-50" scroll-region>
+    <div v-show="videoPlayerShow" class="fixed inset-0 transform transition-all" @click="close">
+      <button v-if="videoPlayerShow" type="button" @click="close"
         class="absolute z-20 mdi mdi-close-thick bg-gray-800 text-white text-xl top-0 right-0 p-2"></button>
       <div class="absolute inset-0 bg-black opacity-75" />
     </div>
 
 
-    <div v-show="videoPlayer" class="relative transform transition-all max-w-4xl sm:mx-auto ">
+    <div v-show="videoPlayerShow" class="relative transform transition-all max-w-4xl sm:mx-auto ">
 
-      <div v-if="videoPlayer">
+      <div v-if="videoPlayerShow">
         <video controls src="https://videos.pexels.com/video-files/854399/854399-hd_1280_720_24fps.mp4">
           <source src="https://videos.pexels.com/video-files/854399/854399-hd_1280_720_24fps.mp4" type="video/mp4" />
         </video>
