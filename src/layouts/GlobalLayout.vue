@@ -31,7 +31,7 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <div class="col-span-2 lg:col-span-1 flex justify-center lg:justify-end">
+        <div class="col-span-2 lg:col-span-1 flex justify-center lg:justify-end items-center">
           <a target="_blank" href="https://danawhalen.glossgenius.com/services"
             class="py-1 px-8 bg-white rounded text-black">
             Book an Appointment

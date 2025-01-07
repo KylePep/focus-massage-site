@@ -89,7 +89,7 @@ watch(
 
       <div v-show="videoPlayerShow" class="relative transform transition-all max-w-4xl sm:mx-auto ">
 
-        <div v-if="videoPlayerShow">
+        <div v-if="videoPlayerShow" class="my-24">
           <video controls src="https://videos.pexels.com/video-files/854399/854399-hd_1280_720_24fps.mp4">
             <source src="https://videos.pexels.com/video-files/854399/854399-hd_1280_720_24fps.mp4" type="video/mp4" />
           </video>

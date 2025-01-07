@@ -1,6 +1,6 @@
 <template>
   <section
-    class="group card-bg col-span-3 lg:col-span-1 flex flex-col justify-around text-center space-y-4 p-4 hover:bg-blue-700/20 duration-1000 relative overflow-hidden">
+    class="group card-bg col-span-3 lg:col-span-1 flex flex-col justify-around text-center space-y-4 px-4 py-8 hover:bg-blue-700/20 duration-1000 relative overflow-hidden">
     <i class="h-16 w-16 mx-auto text-fm-blue">
       <slot name="icon" />
     </i>

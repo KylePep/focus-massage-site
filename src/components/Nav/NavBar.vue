@@ -61,9 +61,10 @@ onUnmounted(() => {
       </div>
       <!-- Navigation Links -->
       <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
-        <NavLink href="About" :active="route.name == 'About'">
+        <a target="_blank" href="https://danawhalen.glossgenius.com/services"
+          class="border-transparent font-medium leading-5 hover:border-light focus:outline-none focus:border-light transition duration-150 ease-in-out inline-flex items-center px-1 py-1 border-b-2 uppercase">
           Book
-        </NavLink>
+        </a>
       </div>
       <!-- Navigation Links -->
       <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
@@ -99,9 +100,10 @@ onUnmounted(() => {
         <ResponsiveNavLink href="About" :active="route.name == 'About'">
           About
         </ResponsiveNavLink>
-        <ResponsiveNavLink href="About" :active="route.name == 'About'">
+        <a target="_blank" href="https://danawhalen.glossgenius.com/services"
+          class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium hover:bg-gray-500 hover:border-gray-300 focus:outline-none focus:bg-gray-500 focus:border-gray-300 transition duration-150 ease-in-out">
           Book
-        </ResponsiveNavLink>
+        </a>
         <ResponsiveNavLink href="About" :active="route.name == 'About'">
           Contact
         </ResponsiveNavLink>
