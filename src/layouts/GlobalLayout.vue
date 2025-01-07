@@ -51,12 +51,10 @@ onUnmounted(() => {
     </header>
 
     <main class="flex-1 mt-10 lg:mt-14">
-      <!-- <div class=""> -->
       <slot />
-      <!-- </div> -->
     </main>
 
-    <footer class="mt-20">
+    <footer class="">
       <slot name="footer"></slot>
     </footer>
 
