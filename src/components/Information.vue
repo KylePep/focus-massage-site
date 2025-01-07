@@ -42,31 +42,39 @@ import SectionLayout from "../layouts/SectionLayout.vue";
 
         <div>
           <h2 class="font-medium text-xl mb-4">Contact Details</h2>
-          <table class="w-full border-collapse lg:w-3/4">
-            <tbody>
 
+          <table class="border-collapse">
+            <tbody>
               <tr class="">
-                <td class="py-2 font-semibold align-top">Address</td>
-                <td class="py-2 font-light px-4 align-top">:</td>
+                <td class="flex py-2 font-semibold align-top"><a href="https://maps.app.goo.gl/kmsH8BToMsjNWdU19"
+                    target="_blank"
+                    class="w-full text-center bg-blue-500 rounded px-1 text-white hover:bg-blue-800 w-full">Address</a>
+                </td>
+                <td class="py-2 font-light lg:px-4 align-top">:</td>
                 <td class="py-2 text-right font-light align-top">
                   2726 Avenue Papineau Montreal, QC, Canada
                 </td>
               </tr>
 
               <tr class="">
-                <td class="py-2 font-semibold align-top">Phone</td>
-                <td class="py-2 font-light px-4 align-top">:</td>
+                <td class="flex py-2 font-semibold align-top"> <a href="tel:xxx-xxx-xxxx"
+                    class="w-full text-center bg-blue-500 rounded px-1 text-white hover:bg-blue-800">Phone</a> </td>
+                <td class="py-2 font-light lg:px-4 align-top">:</td>
                 <td class="py-2 text-right font-light align-top">xxx-xxx-xxxx</td>
+
               </tr>
 
               <tr class="">
-                <td class="py-2 font-semibold align-top">Email</td>
-                <td class="py-2 font-light px-4 align-top">:</td>
+                <td class="flex py-2 font-semibold align-top"> <a href="mailto:email@exampleemail.com"
+                    class="w-full text-center bg-blue-500 rounded px-1 text-white hover:bg-blue-800">Email</a> </td>
+                <td class="py-2 font-light lg:px-4 align-top">:</td>
                 <td class="py-2 text-right font-light align-top">email@exampleemail.com</td>
+
               </tr>
 
             </tbody>
           </table>
+
         </div>
       </section>
 
