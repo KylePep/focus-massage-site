@@ -1,8 +1,8 @@
 <script setup>
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import '@splidejs/vue-splide/css/skyblue';
+import '@splidejs/vue-splide/css/core';
 import ReviewCard from "./ReviewCard.vue";
 import { ref } from "vue";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/vue-splide";
 
 const reviews = ref([
   {
@@ -32,23 +32,30 @@ const reviews = ref([
 
 
 <template>
-
-  <Splide class="pb-10" aria-label="Customer Reviews" data-splide='{
-    "type": "fade", 
-    "rewind": true,
-    "arrows": true, 
-    "autoplay": true, 
-    "interval": 30000, 
-    "perPage": 1,
-    "pagination": false
-  }'>
-    <template v-for="review in reviews" :key="review.name">
-      <SplideSlide>
-        <ReviewCard :review="review" />
-      </SplideSlide>
-    </template>
+  <Splide :has-track="false" aria-label="Customer Reviews" data-splide='{
+      "type": "fade", 
+      "rewind": true,
+      "arrows": true, 
+      "autoplay": true, 
+      "interval": 30000, 
+      "perPage": 1,
+      "pagination": false
+    }'>
+    <SplideTrack>
+      <template v-for="review in reviews" :key="review.name">
+        <SplideSlide>
+          <ReviewCard :review="review" />
+        </SplideSlide>
+      </template>
+    </SplideTrack>
+    <div class="splide__arrows relative lg:static mt-8">
+      <button
+        class="splide__arrow splide__arrow--prev mdi mdi-arrow-left text-4xl hover:text-blue-500 duration-300"></button>
+      <button
+        class="splide__arrow splide__arrow--next mdi mdi-arrow-right text-4xl hover:text-blue-500 duration-300"></button>
+    </div>
   </Splide>
 </template>
 
 
-<style lang="scss" scoped></style>
+<style scoped></style>

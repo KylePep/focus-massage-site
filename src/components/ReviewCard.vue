@@ -4,7 +4,7 @@ const props = defineProps(['review']);
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center bg-transparent py-4 mx-4 space-y-4 lg:w-3/4 mx-auto lg:mb-0">
+  <div class="flex flex-col justify-center items-center bg-transparent py-4 mx-4 space-y-4 lg:w-3/4 mx-auto">
     <div class="flex items-center gap-4 h-24">
       <div>
         <img class="h-20 w-20 rounded-full object-cover object-center" :src="review.icon" alt="">
