@@ -13,13 +13,13 @@ import PricingCarousel from './PricingCarousel.vue'
         <h1 class="text-white lg:text-2xl mb-1">New Client Special Offer</h1>
         <h2 class="text-white text-2xl lg:text-4xl">For your convenience, you can book your appointment</h2>
       </div>
-      <div class="lg:mx-auto">
+      <div class="lg:mx-auto mt-8">
         <RouterLink :to="{ name: 'About' }" class="bg-white px-6 py-2 rounded-sm lg:text-xl">Book an Appointment
         </RouterLink>
       </div>
     </div>
     <div class="grid grid-cols-2">
-      <section class=" col-span-2 lg:col-span-1 space-y-4 bg-white ps-48 py-24 pe-8">
+      <section class=" col-span-2 lg:col-span-1 space-y-4 bg-white lg:ps-48 py-24 lg:pe-8 px-4">
         <h1 class="text-3xl font-semibold">
           <span class="text-2xl"><mark class="bg-transparent text-blue-500">Benefits</mark> of</span><br>
           Registered Massage Therapy
@@ -37,7 +37,7 @@ import PricingCarousel from './PricingCarousel.vue'
           <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Post-surgical rehabilitation</li>
         </ul>
       </section>
-      <section class="background-image-white col-span-2 lg:col-span-1 space-y-4 pe-48 py-24 ps-8">
+      <section class="background-image-white col-span-2 lg:col-span-1 space-y-4 lg:pe-48 py-24 lg:ps-8 px-4">
         <h2 class="text-3xl font-semibold">
           Therapy
           <mark class="bg-transparent text-blue-500">Rates</mark>
