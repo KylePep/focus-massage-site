@@ -20,8 +20,6 @@ import Modal from "../components/Modal.vue";
 
     <Offerings />
 
-    <Modal />
-
   </div>
 </template>
 

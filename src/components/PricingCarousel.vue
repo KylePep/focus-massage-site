@@ -9,7 +9,7 @@ import '@splidejs/vue-splide/css/skyblue';
 
 <template>
 
-  <Splide aria-label="My Favorite Images" data-splide='{
+  <Splide class="pb-10" aria-label="My Favorite Images" data-splide='{
     "type": "loop", 
     "arrows": false, 
     "autoplay": true, 
@@ -20,51 +20,63 @@ import '@splidejs/vue-splide/css/skyblue';
     }
   }'>
     <SplideSlide>
-      <div class="m-4">
-        1
-        <img
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Sample 1">
+      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
+        <div>
+          <div class="text-6xl font-black">
+            30
+          </div>
+          <p class="text-center">Minute</p>
+        </div>
+        <div class="border-b border-blue-500 w-1/2"></div>
+        <div class="text-blue-500 text-2xl">$65.00</div>
       </div>
     </SplideSlide>
     <SplideSlide>
-      <div class="m-4">
-        2
-        <img
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Sample 1">
+      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
+        <div>
+          <div class="text-6xl font-black">
+            45
+          </div>
+          <p class="text-center">Minute</p>
+        </div>
+        <div class="border-b border-blue-500 w-1/2"></div>
+        <div class="text-blue-500 text-2xl">$75.00</div>
       </div>
     </SplideSlide>
     <SplideSlide>
-      <div class="m-4">
-        3
-        <img
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Sample 1">
+      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
+        <div>
+          <div class="text-6xl font-black">
+            60
+          </div>
+          <p class="text-center">Minute</p>
+        </div>
+        <div class="border-b border-blue-500 w-1/2"></div>
+        <div class="text-blue-500 text-2xl">$90.00</div>
       </div>
     </SplideSlide>
     <SplideSlide>
-      <div class="m-4">
-        4
-        <img
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Sample 1">
+      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
+        <div>
+          <div class="text-6xl font-black">
+            90
+          </div>
+          <p class="text-center">Minute</p>
+        </div>
+        <div class="border-b border-blue-500 w-1/2"></div>
+        <div class="text-blue-500 text-2xl">$120.00</div>
       </div>
     </SplideSlide>
     <SplideSlide>
-      <div class="m-4">
-        5
-        <img
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Sample 1">
-      </div>
-    </SplideSlide>
-    <SplideSlide>
-      <div class="m-4">
-        6
-        <img
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Sample 1">
+      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
+        <div>
+          <div class="text-6xl font-black">
+            120
+          </div>
+          <p class="text-center">Minute</p>
+        </div>
+        <div class="border-b border-blue-500 w-1/2"></div>
+        <div class="text-blue-500 text-2xl">$160.00</div>
       </div>
     </SplideSlide>
   </Splide>
