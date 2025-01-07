@@ -32,7 +32,10 @@ onUnmounted(() => {
         </div>
 
         <div class="col-span-2 lg:col-span-1 flex justify-center lg:justify-end">
-          <button class="py-1 px-8 bg-white rounded text-black">Book an Appointment</button>
+          <a target="_blank" href="https://danawhalen.glossgenius.com/services"
+            class="py-1 px-8 bg-white rounded text-black">
+            Book an Appointment
+          </a>
         </div>
       </div>
 

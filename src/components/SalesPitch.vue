@@ -1,6 +1,7 @@
 <script setup>
 import { ref, watch } from "vue";
 import SectionLayout from "../layouts/SectionLayout.vue";
+import { RouterLink } from "vue-router";
 
 
 
@@ -62,16 +63,17 @@ watch(
         </p>
 
         <div class="flex flex-col lg:flex-row gap-8 items-center pb-8 lg:pb-0">
-          <button class="bg-blue-500 px-12 py-2 rounded-sm text-white font-bold hover:bg-blue-800 duration-300">Read
-            more</button>
-          <button class="flex">
+          <RouterLink :to="{ name: 'About' }"
+            class="bg-blue-500 px-12 py-2 rounded-sm text-white font-bold hover:bg-blue-800 duration-300">Read
+            more</RouterLink>
+          <a href="tel:xxx-xxx-xxxx" class="flex">
             <div class="border border-gray-400 rounded-full p-1 shadow">
               <div class="h-10 w-10 bg-blue-500 rounded-full animate-pulse flex items-center justify-center">
                 <i class="mdi mdi-phone  text-3xl text-white "></i>
               </div>
             </div>
             <span class="text-3xl text-blue-500 mx-2">x-xxx-xxx-xxxx</span>
-          </button>
+          </a>
         </div>
 
       </section>

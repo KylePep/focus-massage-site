@@ -14,8 +14,10 @@ import PricingCarousel from './PricingCarousel.vue'
         <h2 class="text-white text-2xl lg:text-4xl">For your convenience, you can book your appointment</h2>
       </div>
       <div class="lg:mx-auto mt-8">
-        <RouterLink :to="{ name: 'About' }" class="bg-white px-6 py-2 rounded-sm lg:text-xl">Book an Appointment
-        </RouterLink>
+        <a target="_blank" href="https://danawhalen.glossgenius.com/services"
+          class="w-full bg-white px-6 py-2 rounded-sm lg:text-xl">
+          Book an Appointment
+        </a>
       </div>
     </div>
     <div class="grid grid-cols-2">

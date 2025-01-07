@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from "vue-router";
+
 const props = defineProps([
   'page'
 ])
@@ -24,7 +26,9 @@ const props = defineProps([
         and act on teh
         body with pressure</p>
       <div>
-        <button class="bg-blue-500 text-white px-6 py-2 rounded-sm">About Us</button>
+        <RouterLink :to="{ name: 'About' }" class="bg-blue-500 text-white px-6 py-2 rounded-sm">
+          About Us
+        </RouterLink>
       </div>
     </div>
 
