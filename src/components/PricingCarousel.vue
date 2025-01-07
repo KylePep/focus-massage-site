@@ -1,6 +1,7 @@
 <script setup>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css/skyblue';
+import PricingCard from './PricingCard.vue'
 
 
 
@@ -9,7 +10,7 @@ import '@splidejs/vue-splide/css/skyblue';
 
 <template>
 
-  <Splide class="pb-10" aria-label="My Favorite Images" data-splide='{
+  <Splide class="pb-10" aria-label="Therapy Pricing" data-splide='{
     "type": "loop", 
     "arrows": false, 
     "autoplay": true, 
@@ -20,64 +21,34 @@ import '@splidejs/vue-splide/css/skyblue';
     }
   }'>
     <SplideSlide>
-      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
-        <div>
-          <div class="text-6xl font-black">
-            30
-          </div>
-          <p class="text-center">Minute</p>
-        </div>
-        <div class="border-b border-blue-500 w-1/2"></div>
-        <div class="text-blue-500 text-2xl">$65.00</div>
-      </div>
+      <PricingCard>
+        <template #time>30</template>
+        <template #price>$65.00</template>
+      </PricingCard>
     </SplideSlide>
     <SplideSlide>
-      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
-        <div>
-          <div class="text-6xl font-black">
-            45
-          </div>
-          <p class="text-center">Minute</p>
-        </div>
-        <div class="border-b border-blue-500 w-1/2"></div>
-        <div class="text-blue-500 text-2xl">$75.00</div>
-      </div>
+      <PricingCard>
+        <template #time>48</template>
+        <template #price>$75.00</template>
+      </PricingCard>
     </SplideSlide>
     <SplideSlide>
-      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
-        <div>
-          <div class="text-6xl font-black">
-            60
-          </div>
-          <p class="text-center">Minute</p>
-        </div>
-        <div class="border-b border-blue-500 w-1/2"></div>
-        <div class="text-blue-500 text-2xl">$90.00</div>
-      </div>
+      <PricingCard>
+        <template #time>60</template>
+        <template #price>$90.00</template>
+      </PricingCard>
     </SplideSlide>
     <SplideSlide>
-      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
-        <div>
-          <div class="text-6xl font-black">
-            90
-          </div>
-          <p class="text-center">Minute</p>
-        </div>
-        <div class="border-b border-blue-500 w-1/2"></div>
-        <div class="text-blue-500 text-2xl">$120.00</div>
-      </div>
+      <PricingCard>
+        <template #time>90</template>
+        <template #price>$120.00</template>
+      </PricingCard>
     </SplideSlide>
     <SplideSlide>
-      <div class="flex flex-col justify-center items-center bg-white shadow-lg py-4 m-4 space-y-4">
-        <div>
-          <div class="text-6xl font-black">
-            120
-          </div>
-          <p class="text-center">Minute</p>
-        </div>
-        <div class="border-b border-blue-500 w-1/2"></div>
-        <div class="text-blue-500 text-2xl">$160.00</div>
-      </div>
+      <PricingCard>
+        <template #time>120</template>
+        <template #price>$160.00</template>
+      </PricingCard>
     </SplideSlide>
   </Splide>
 </template>
