@@ -3,6 +3,8 @@ import Categories from "../components/Categories.vue";
 import SalesPitch from "../components/SalesPitch.vue";
 import Services from "../components/Services.vue";
 import Offerings from "../components/Offerings.vue";
+import Reviews from "../components/Reviews.vue";
+import Information from "../components/Information.vue";
 
 </script>
 
@@ -20,6 +22,8 @@ import Offerings from "../components/Offerings.vue";
     <Offerings />
 
     <Reviews />
+
+    <Information />
 
   </div>
 </template>
