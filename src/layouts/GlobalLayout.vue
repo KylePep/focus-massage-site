@@ -24,10 +24,10 @@ onUnmounted(() => {
       <div class="grid grid-cols-2 max-w-7xl mx-auto text-center lg:text-start">
         <div class="lg:flex col-span-2 lg:col-span-1">
           <div class="lg:border-r px-4 my-2">
-            Email us: <span>email@email.com</span>
+            Email us: <span>email@exampleemail.com</span>
           </div>
           <div class="px-4 my-2">
-            Call us: <span>x-xxx-xxx-xxxx</span>
+            Call us: <span>1-234-567-8910</span>
           </div>
         </div>
 

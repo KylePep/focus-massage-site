@@ -1,5 +1,11 @@
 <script setup>
 import SectionLayout from "../layouts/SectionLayout.vue";
+import AromaIcon from "./Icons/AromaIcon.vue";
+import ExerciseIcon from "./Icons/ExerciseIcon.vue";
+import PhysioTherapyIcon from "./Icons/PhysioTherapyIcon.vue";
+import RelaxIcon from "./Icons/RelaxIcon.vue";
+import SportsRehabIcon from "./Icons/SportsRehabIcon.vue";
+import VehicleIcon from "./Icons/VehicleIcon.vue";
 import SectionTitle from "./SectionTitle.vue";
 import ServiceCard from "./ServiceCard.vue";
 
@@ -21,7 +27,7 @@ import ServiceCard from "./ServiceCard.vue";
       <section class="grid grid-cols-3 gap-4">
         <ServiceCard>
           <template #icon>
-            <FMIcon />
+            <SportsRehabIcon />
           </template>
           <template #title>
             Sports Rehabilitation
@@ -34,7 +40,7 @@ import ServiceCard from "./ServiceCard.vue";
 
         <ServiceCard class="hidden lg:flex">
           <template #icon>
-            <FMIcon />
+            <ExerciseIcon />
           </template>
           <template #title>
             Home Care Physiotherapy
@@ -48,7 +54,7 @@ import ServiceCard from "./ServiceCard.vue";
 
         <ServiceCard class="hidden lg:flex">
           <template #icon>
-            <FMIcon />
+            <AromaIcon />
           </template>
           <template #title>
             Aroma Therapy
@@ -61,7 +67,7 @@ import ServiceCard from "./ServiceCard.vue";
 
         <ServiceCard>
           <template #icon>
-            <FMIcon />
+            <PhysioTherapyIcon />
           </template>
           <template #title>
             Physiotherapy
@@ -74,7 +80,7 @@ import ServiceCard from "./ServiceCard.vue";
 
         <ServiceCard class="hidden lg:flex">
           <template #icon>
-            <FMIcon />
+            <RelaxIcon />
           </template>
           <template #title>
             Relaxation Massage
@@ -87,7 +93,7 @@ import ServiceCard from "./ServiceCard.vue";
 
         <ServiceCard>
           <template #icon>
-            <FMIcon />
+            <VehicleIcon />
           </template>
           <template #title>
             Vehicle Injury Treatment

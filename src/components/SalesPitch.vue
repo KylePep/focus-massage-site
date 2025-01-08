@@ -70,7 +70,7 @@ watch(
                 <i class="mdi mdi-phone  text-3xl text-white "></i>
               </div>
             </div>
-            <span class="text-3xl text-blue-500 mx-2">xxx-xxx-xxxx</span>
+            <span class="text-3xl text-blue-500 mx-2">234-567-8910</span>
           </a>
         </div>
 

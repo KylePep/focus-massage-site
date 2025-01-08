@@ -41,7 +41,7 @@ onUnmounted(() => {
       <!-- Logo -->
       <div class="flex items-center w-full -my-2">
         <RouterLink :to="{ name: 'Home' }" class="inline-flex items-center px-1 py-1 me-4">
-          <FMIcon class="duration-1000 bg-fm-blue text-fm-orange rounded-full h-16 w-16 p-2" />
+          <IconFM class="duration-1000 bg-fm-blue text-fm-orange rounded-full h-16 w-16 p-2" />
         </RouterLink>
         <h1 class="font-serif text-2xl lg:text-4xl">Focus Massage <span class="hidden lg:inline-flex">by Dana</span>
         </h1>
@@ -68,9 +68,10 @@ onUnmounted(() => {
       </div>
       <!-- Navigation Links -->
       <div class="hidden space-x-8 sm:-my-2 sm:flex me-4">
-        <NavLink href="About" :active="route.name == 'About'">
+        <button
+          class="border-transparent font-medium leading-5 hover:border-light focus:outline-none focus:border-light transition duration-150 ease-in-out inline-flex items-center px-1 py-1 border-b-2 uppercase">
           Contact
-        </NavLink>
+        </button>
       </div>
 
 

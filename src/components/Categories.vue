@@ -9,7 +9,7 @@ import CategoryCard from './CategoryCard.vue'</script>
 
       <CategoryCard>
         <template #icon>
-          <FMIcon />
+          <MassageIcon />
         </template>
         <template #title>
           Massage Therapy
@@ -23,7 +23,7 @@ import CategoryCard from './CategoryCard.vue'</script>
 
       <CategoryCard>
         <template #icon>
-          <FMIcon />
+          <PhysioIcon />
         </template>
         <template #title>
           Physio Therapy
@@ -36,7 +36,7 @@ import CategoryCard from './CategoryCard.vue'</script>
 
       <CategoryCard>
         <template #icon>
-          <FMIcon />
+          <SpaIcon />
         </template>
         <template #title>
           Acupuncture
