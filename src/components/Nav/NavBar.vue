@@ -105,9 +105,10 @@ onUnmounted(() => {
           class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium hover:bg-gray-500 hover:border-gray-300 focus:outline-none focus:bg-gray-500 focus:border-gray-300 transition duration-150 ease-in-out">
           Book
         </a>
-        <ResponsiveNavLink href="About" :active="route.name == 'About'">
+        <button
+          class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium hover:bg-gray-500 hover:border-gray-300 focus:outline-none focus:bg-gray-500 focus:border-gray-300 transition duration-150 ease-in-out">
           Contact
-        </ResponsiveNavLink>
+        </button>
       </div>
 
     </div>

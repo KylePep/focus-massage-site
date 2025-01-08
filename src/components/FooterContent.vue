@@ -7,17 +7,17 @@
   <div class="text-xs lg:text-lg">
     <div class="bg-gray-900 px-6 lg:px-40 grid grid-cols-4 gap-1 gap-y-8 lg:gap-20 text-white/90 py-12">
 
-      <section class="col-span-4  lg:col-start-3 lg:col-span-1 space-y-4 lg:flex flex-col justify-between">
+      <section class="col-span-4  lg:col-start-3 lg:col-span-1 space-y-4 lg:flex flex-col justify-start">
         <div class="font-bold text-base lg:text-lg">
           Services
         </div>
         <ul class="space-y-1 lg:text-sm">
-          <li>Physiotherapy</li>
           <li>Massage Therapy</li>
+          <li>Home Care Physiotherapy</li>
+          <li>Aroma Therapy</li>
+          <li>Physiotherapy</li>
+          <li>Relaxation Massage</li>
           <li>Vehicle Injury Treatment</li>
-          <li>Acupuncture</li>
-          <li>Neurological Rehabilitiation</li>
-          <li>Custom-Made Orthotics</li>
         </ul>
       </section>
 

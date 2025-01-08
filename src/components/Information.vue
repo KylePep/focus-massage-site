@@ -63,7 +63,7 @@ import SectionLayout from "../layouts/SectionLayout.vue";
                 <td class="py-2 font-light lg:px-4 align-top">:</td>
                 <!-- <td class="flex py-2 font-semibold align-top"> <a href="tel:xxx-xxx-xxxx"
                     class="w-full text-center bg-blue-500 rounded px-1 text-white hover:bg-blue-800">Phone</a> </td> -->
-                <td class="py-2 text-right font-light align-top">xxx-xxx-xxxx</td>
+                <td class="py-2 text-right font-light align-top">234-567-8910</td>
 
               </tr>
 

@@ -7,7 +7,7 @@ const props = defineProps(['review']);
   <div class="flex flex-col justify-center items-center bg-transparent py-4 mx-4 space-y-4 lg:w-3/4 mx-auto">
     <div class="grid grid-cols-2 gap-4 h-24 w-full">
       <div class="flex justify-end">
-        <img class="h-20 w-20 rounded-full object-cover object-center" :src="review.icon" alt="">
+        <img class="icon h-20 w-20 rounded-full object-cover object-center" :src="review.icon" alt="">
       </div>
       <div>
         <h1 class="text-xl font-semibold">{{ review.name }}</h1>
@@ -24,4 +24,8 @@ const props = defineProps(['review']);
 </template>
 
 
-<style lang="scss" scoped></style>
+<style scoped>
+.icon {
+  overflow-clip-margin: unset;
+}
+</style>
