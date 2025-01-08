@@ -32,7 +32,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard>
+        <ServiceCard class="hidden lg:flex">
           <template #icon>
             <FMIcon />
           </template>
@@ -46,7 +46,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard>
+        <ServiceCard class="hidden lg:flex">
           <template #icon>
             <FMIcon />
           </template>
@@ -72,7 +72,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard>
+        <ServiceCard class="hidden lg:flex">
           <template #icon>
             <FMIcon />
           </template>

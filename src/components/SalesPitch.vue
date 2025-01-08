@@ -30,13 +30,13 @@ watch(
 
     <div id="screen-span" class=" relative top-auto grid grid-cols-2 gap-2 bg-white">
 
-      <div class="relative col-span-2 lg:col-span-1">
-        <img
+      <div class="relative col-span-2 lg:col-span-1 min-h-96">
+        <img class="h-full object-cover"
           src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="">
         <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
           <button @click="videoPlayerShow = true"
-            class="group z-10 bg-blue-500 h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
+            class="group z-10 bg-blue-600 h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
               class="mdi mdi-play text-4xl text-white group-hover:text-5xl duration-300"></i>
           </button>
           <div class="absolute group bg-blue-500 h-14 w-14 rounded-full duration-300 shadow animate-ping">
@@ -44,14 +44,14 @@ watch(
         </div>
       </div>
 
-      <section class="flex flex-col justify-center col-span-2 lg:col-span-1 space-y-6 px-8">
+      <section class="flex flex-col justify-center col-span-2 lg:col-span-1 space-y-6 px-8 py-12">
         <div>
           <h1 class="text-2xl font-semibold"><span class="text-blue-500">Positive Effects</span> of </h1>
           <h2 class="text-3xl font-semibold">
             Dialia Registered Massage Therapy
           </h2>
         </div>
-        <p class="text-sm lg:text-base">
+        <p class="text-sm lg:text-base font-light text-gray-600">
           The health care profession of Dialia Registered Massage Therapy is far more advanced than typical bodywork or
           relaxation massage. <br><br>
 
@@ -62,9 +62,9 @@ watch(
           therapy that can help alleviate the discomfort associated with everyday.
         </p>
 
-        <div class="flex flex-col lg:flex-row gap-8 items-center pb-8 lg:pb-0">
+        <div class="flex flex-col lg:flex-row gap-8 items-start lg:items-center pb-8 lg:pb-0">
           <RouterLink :to="{ name: 'About' }"
-            class="bg-blue-500 px-12 py-2 rounded-sm text-white font-bold hover:bg-blue-800 duration-300">Read
+            class="bg-blue-500 px-6 lg:px-12 py-2 rounded-sm text-white font-bold hover:bg-blue-800 duration-300">Read
             more</RouterLink>
           <a href="tel:xxx-xxx-xxxx" class="flex">
             <div class="border border-gray-400 rounded-full p-1 shadow">
@@ -72,7 +72,7 @@ watch(
                 <i class="mdi mdi-phone  text-3xl text-white "></i>
               </div>
             </div>
-            <span class="text-3xl text-blue-500 mx-2">x-xxx-xxx-xxxx</span>
+            <span class="text-3xl text-blue-500 mx-2">xxx-xxx-xxxx</span>
           </a>
         </div>
 

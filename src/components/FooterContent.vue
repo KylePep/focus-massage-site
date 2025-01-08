@@ -7,25 +7,48 @@
   <div class="text-xs lg:text-lg">
     <div class="bg-gray-900 px-6 lg:px-40 grid grid-cols-4 gap-1 gap-y-8 lg:gap-20 text-white/90 py-12">
 
+      <section class="col-span-4  lg:col-start-3 lg:col-span-1 space-y-4 lg:flex flex-col justify-between">
+        <div class="font-bold text-base lg:text-lg">
+          Services
+        </div>
+        <ul class="space-y-1 lg:text-sm">
+          <li>Physiotherapy</li>
+          <li>Massage Therapy</li>
+          <li>Vehicle Injury Treatment</li>
+          <li>Acupuncture</li>
+          <li>Neurological Rehabilitiation</li>
+          <li>Custom-Made Orthotics</li>
+        </ul>
+      </section>
+
       <section class="col-span-4 lg:col-span-1 space-y-4 h-full lg:flex flex-col justify-around">
         <div class="font-bold text-base lg:text-lg">
           Get In Touch
         </div>
         <ul class="space-y-2">
-          <li class="font-bold text-base">Address: <span class="font-normal text-sm">address spelt out</span></li>
+          <li class="font-bold text-base">Address: <span class="font-normal text-sm">1217 3rd St S Suite 105, Nampa, ID
+              83651</span></li>
           <li class="font-bold text-base">Phone: <span class="font-normal text-sm">xxx-xxx-xxxx</span></li>
           <li class="font-bold text-base">Email: <span class="font-normal text-sm">email@emai.com</span></li>
         </ul>
         <div class="flex gap-4">
-          <button class="bg-gray-600 rounded-full h-8 w-8">1</button>
-          <button class="bg-gray-600 rounded-full h-8 w-8">2</button>
-          <button class="bg-gray-600 rounded-full h-8 w-8">3</button>
-          <button class="bg-gray-600 rounded-full h-8 w-8">4</button>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100090973550375&mibextid=ZbWKwL"
+            class="bg-gray-600 rounded-full h-8 w-8 flex justify-center items-center">
+            <i class="relative mdi mdi-facebook text-xl"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/focusmassagebydana"
+            class="bg-gray-600 rounded-full h-8 w-8 flex justify-center items-center">
+            <i class="relative mdi mdi-instagram text-xl"></i>
+          </a>
+          <a target="_blank" href="https://danawhalen.glossgenius.com/"
+            class="bg-gray-600 rounded-full h-8 w-8 flex justify-center items-center">
+            <i class="relative mdi mdi-alpha-g text-4xl"></i>
+          </a>
 
         </div>
       </section>
 
-      <section class="col-span-4 lg:col-span-1 space-y-4 lg:flex flex-col justify-around">
+      <!-- <section class="col-span-4 lg:col-span-1 space-y-4 lg:flex flex-col justify-around">
         <div class="font-bold text-base lg:text-lg">
           Recent Posts
         </div>
@@ -54,23 +77,11 @@
             </div>
           </li>
         </ul>
-      </section>
+      </section> -->
 
-      <section class="col-span-4 lg:col-span-1 space-y-4 lg:flex flex-col justify-around">
-        <div class="font-bold text-base lg:text-lg">
-          Customer Service
-        </div>
-        <ul class="space-y-1 lg:text-sm">
-          <li>Physiotherapy</li>
-          <li>Massage Therapy</li>
-          <li>Vehicle Injury Treatment</li>
-          <li>Acupuncture</li>
-          <li>Neurological Rehabilitiation</li>
-          <li>Custom-Made Orthotics</li>
-        </ul>
-      </section>
 
-      <section class="col-span-4 lg:col-span-1 space-y-4 lg:flex flex-col justify-around">
+
+      <!-- <section class="col-span-4 lg:col-span-1 space-y-4 lg:flex flex-col justify-between">
         <div class="font-bold text-base lg:text-lg">
           Subscribe To Us
         </div>
@@ -80,7 +91,7 @@
           <button class="bg-blue-500 px-8">></button>
         </div>
 
-      </section>
+      </section> -->
 
 
     </div>

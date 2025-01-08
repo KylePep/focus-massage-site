@@ -7,7 +7,7 @@
     <h2 class="font-semibold">
       <slot name="title" />
     </h2>
-    <p class="text-sm">
+    <p class="text-sm font-light text-gray-600">
       <slot name="content" />
     </p>
     <i class="absolute -right-16 -bottom-16 h-64 w-64 text-transparent group-hover:text-black/10 duration-1000">

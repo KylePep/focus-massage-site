@@ -5,8 +5,8 @@ const props = defineProps(['review']);
 
 <template>
   <div class="flex flex-col justify-center items-center bg-transparent py-4 mx-4 space-y-4 lg:w-3/4 mx-auto">
-    <div class="flex items-center gap-4 h-24">
-      <div>
+    <div class="grid grid-cols-2 gap-4 h-24 w-full">
+      <div class="flex justify-end">
         <img class="h-20 w-20 rounded-full object-cover object-center" :src="review.icon" alt="">
       </div>
       <div>

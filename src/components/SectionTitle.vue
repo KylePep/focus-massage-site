@@ -10,7 +10,7 @@
       </h2>
     </div>
 
-    <div class="text-center">
+    <div class="text-center text-gray-600 font-light">
       <slot name="subtitle" />
     </div>
   </div>

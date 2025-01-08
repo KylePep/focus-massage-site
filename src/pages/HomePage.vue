@@ -11,7 +11,7 @@ import Information from "../components/Information.vue";
 
 <template>
 
-  <div class="space-y-32 mt-8">
+  <div class="space-y-16 lg:space-y-32 mt-8">
 
     <Categories />
 
