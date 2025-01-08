@@ -30,7 +30,7 @@ watch(
 
     <div id="screen-span" class=" relative top-auto grid grid-cols-2 gap-2 bg-white">
 
-      <div class="background-image-white relative col-span-2 lg:col-span-1 min-h-96">
+      <section class="background-image-white relative col-span-2 lg:col-span-1 min-h-96">
 
         <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
           <button @click="videoPlayerShow = true"
@@ -40,7 +40,7 @@ watch(
           <div class="absolute group bg-blue-500 h-14 w-14 rounded-full duration-300 shadow animate-ping">
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="flex flex-col justify-center col-span-2 lg:col-span-1 space-y-6 px-8 py-12">
         <div>

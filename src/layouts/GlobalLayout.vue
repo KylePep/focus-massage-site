@@ -53,7 +53,7 @@ onUnmounted(() => {
       <slot name="header"></slot>
     </header>
 
-    <main class="flex-1 mt-10 lg:mt-14 min-h-screen">
+    <main class="flex-1 min-h-screen">
       <slot />
     </main>
 
