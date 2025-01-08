@@ -31,9 +31,7 @@ watch(
     <div id="screen-span" class=" relative top-auto grid grid-cols-2 gap-2 bg-white">
 
       <div class="background-image-white relative col-span-2 lg:col-span-1 min-h-96">
-        <!-- <img class="h-full object-cover"
-          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""> -->
+
         <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
           <button @click="videoPlayerShow = true"
             class="group z-10 bg-blue-600 h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
