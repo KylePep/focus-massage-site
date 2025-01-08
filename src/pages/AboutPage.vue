@@ -1,10 +1,14 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 
 <template>
-  <h1 class="text-fm-blue">Focus Massage About</h1>
+
+  <div class="space-y-16 lg:space-y-32 mt-8">
+
+  </div>
 </template>
 
 
-<style>
-</style>
+<style></style>
