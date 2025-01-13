@@ -23,15 +23,14 @@ const activeFrame = ref('mission');
         </template>
       </SectionTitle>
 
-      <section
-        class="flex flex-col lg:flex-row justify-center border-b-2 border-gray-300 space-y-10 lg:space-y-0 space-x-0 lg:space-x-16 ">
-        <button @click="activeFrame = 'mission'" class="group relative px-16">
+      <section class="flex flex-row justify-center border-b-2 border-gray-300 space-x-6 lg:space-x-16 ">
+        <button @click="activeFrame = 'mission'" class="group relative lg:px-16">
           <div class="duration-300 pb-10 ">
             <div :class="activeFrame == 'mission' ? 'text-fm-blue' : ''"
               class="h-16 w-16 text-black group-hover:text-fm-blue mx-auto duration-500 mb-4">
               <MissionIcon />
             </div>
-            <p class="font-semibold text-lg">
+            <p class="font-semibold text-xs lg:text-lg">
               My Mission
             </p>
           </div>
@@ -40,13 +39,13 @@ const activeFrame = ref('mission');
           </div>
         </button>
 
-        <button @click="activeFrame = 'values'" class="group relative px-16">
+        <button @click="activeFrame = 'values'" class="group relative lg:px-16">
           <div class=" duration-300 pb-10 ">
             <div :class="activeFrame == 'values' ? 'text-fm-blue' : ''"
               class=" h-16 w-16 text-black group-hover:text-fm-blue mx-auto duration-500 mb-4">
               <VisionIcon />
             </div>
-            <p class="font-semibold text-lg">
+            <p class="font-semibold text-xs lg:text-lg">
               My Vision & Values
             </p>
           </div>
@@ -54,13 +53,13 @@ const activeFrame = ref('mission');
             class="absolute bottom-0 left-0 border-b-2 border-blue-500 duration-500"></div>
         </button>
 
-        <button @click="activeFrame = 'quality'" class="group relative px-16">
+        <button @click="activeFrame = 'quality'" class="group relative lg:px-16">
           <div class=" duration-300 pb-10 ">
             <div :class="activeFrame == 'quality' ? 'text-fm-blue' : ''"
               class=" h-16 w-16 text-black group-hover:text-fm-blue mx-auto duration-500 mb-4">
               <QualityIcon />
             </div>
-            <p class="font-semibold text-lg">
+            <p class="font-semibold text-xs lg:text-lg">
               My Quality
             </p>
           </div>
@@ -73,23 +72,87 @@ const activeFrame = ref('mission');
       <section>
         <transition name="fade" mode="out-in">
           <template v-if="activeFrame === 'mission'" key="mission">
-            <div class="grid grid-cols-2 min-h-96">
-              <div class="col-span-2 lg:col-span-1 background-image bg-image-mission"></div>
-              <div class="col-span-2 lg:col-span-1">Stuff and things</div>
+            <div class="grid grid-cols-2 gap-8 min-h-96 ">
+              <div class="col-span-2 lg:col-span-1 background-image bg-image-mission min-h-48"></div>
+              <div class="col-span-2 lg:col-span-1 space-y-8">
+                <h3 class="font-semibold text-2xl text-gray-600">
+                  Our core and additional services
+                </h3>
+                <p class="font-light text-gray-600">
+                  Our Vision is to promote a healthy lifestyle. To be a global health care leader by advancing the
+                  science and practice of massage therapy. In supporting our members and serving our stakeholders. In
+                  supporting our members and serving our stakeholders.
+                </p>
+
+                <ul>
+                  <li class="text-blue-500"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
+                    or
+                    eliminating pain</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving joint mobility</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Circulatory problems</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving lymphatic drainage
+                  </li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>reducing muscular tension</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Post-surgical rehabilitation
+                  </li>
+                </ul>
+              </div>
             </div>
           </template>
 
           <template v-else-if="activeFrame === 'values'" key="values">
-            <div class="grid grid-cols-2 min-h-96">
-              <div class="col-span-2 lg:col-span-1">Stuff and things</div>
-              <div class="col-span-2 lg:col-span-1 background-image bg-image-vision"></div>
+            <div class="grid grid-cols-2 gap-8 min-h-96">
+              <div class="col-span-2 lg:col-span-1 space-y-8">
+                <h3 class="font-semibold text-2xl text-gray-600">
+                  Our core and additional services
+                </h3>
+                <p class="font-light text-gray-600">
+                  Our Vision is to promote a healthy lifestyle. To be a global health care leader by advancing the
+                  science and practice of massage therapy. In supporting our members and serving our stakeholders. In
+                  supporting our members and serving our stakeholders.
+                </p>
+                <ul>
+                  <li class="text-blue-500"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
+                    or
+                    eliminating pain</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving joint mobility</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Circulatory problems</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving lymphatic drainage
+                  </li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>reducing muscular tension</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Post-surgical rehabilitation
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-2 lg:col-span-1 background-image bg-image-vision min-h-48"></div>
             </div>
           </template>
 
           <template v-else-if="activeFrame === 'quality'" key="quality">
-            <div class="grid grid-cols-2 min-h-96">
-              <div class="col-span-2 lg:col-span-1 background-image bg-image-quality"></div>
-              <div class="col-span-2 lg:col-span-1">Stuff and things</div>
+            <div class="grid grid-cols-2 gap-8 min-h-96">
+              <div class="col-span-2 lg:col-span-1 background-image bg-image-quality min-h-48"></div>
+              <div class="col-span-2 lg:col-span-1 space-y-8">
+                <h3 class="font-semibold text-2xl text-gray-600">
+                  Our core and additional services
+                </h3>
+                <p class="font-light text-gray-600">
+                  Our Vision is to promote a healthy lifestyle. To be a global health care leader by advancing the
+                  science and practice of massage therapy. In supporting our members and serving our stakeholders. In
+                  supporting our members and serving our stakeholders.
+                </p>
+                <ul>
+                  <li class="text-blue-500"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
+                    or
+                    eliminating pain</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving joint mobility</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Circulatory problems</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving lymphatic drainage
+                  </li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>reducing muscular tension</li>
+                  <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Post-surgical rehabilitation
+                  </li>
+                </ul>
+              </div>
             </div>
           </template>
         </transition>
