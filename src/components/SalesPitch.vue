@@ -54,7 +54,7 @@ watch(
           relaxation massage. <br><br>
 
           Registered Massage therapy can be used for the treatment of both acute and chronic conditions. The purpose of
-          massage is generally for the treatment of body stress or pain. Our services will help you reduce stress,
+          massage is generally for the treatment of body stress or pain. My services will help you reduce stress,
           relieve
           pain from headaches, reduce pain from injuries. Registered Massage Therapy is a safe and natural health care
           therapy that can help alleviate the discomfort associated with everyday.

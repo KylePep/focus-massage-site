@@ -17,7 +17,7 @@ import ServiceCard from "./ServiceCard.vue";
 
     <div class="space-y-8">
       <SectionTitle>
-        Our Services
+        My Services
         <template #subtitle>
           Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an cule dicta iriure at
           phaedrum.
