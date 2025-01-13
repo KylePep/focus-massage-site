@@ -36,7 +36,7 @@ watch(
 
       <section class="col-span-8 lg:col-span-3 lg:col-start-2 flex flex-col justify-center space-y-6 px-8 py-12">
         <div>
-          <h1 class="text-2xl font-semibold">Who I am</h1>
+          <h1 class="text-2xl lg:text-4xl font-semibold">Who I am</h1>
         </div>
         <p class="text-sm lg:text-base font-light text-gray-600">
           My philosophy is to provide individualised services for every client. Would we come to Dialia RMT therapy as
@@ -65,14 +65,15 @@ watch(
 
       </section>
 
-      <section class="background-image vc-image-1 relative col-span-8 lg:col-span-3 min-h-96">
-
-        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-          <button @click="videoPlayerShow = true"
-            class="group z-10 bg-blue-600 h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
-              class="mdi mdi-play text-4xl text-white group-hover:text-5xl duration-300"></i>
-          </button>
-          <div class="absolute group bg-blue-500 h-14 w-14 rounded-full duration-300 shadow animate-ping">
+      <section class="image-wrapper col-span-8 lg:col-span-3 min-h-96 mx-4 lg:mx-0">
+        <div class="background-image vc-image-1 relative h-full">
+          <div class=" absolute top-0 left-0 w-full h-full flex justify-center items-center">
+            <button @click="videoPlayerShow = true"
+              class="group z-10 bg-blue-600 h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
+                class="mdi mdi-play text-4xl text-white group-hover:text-5xl duration-300"></i>
+            </button>
+            <div class="absolute group bg-blue-500 h-14 w-14 rounded-full duration-300 shadow animate-ping">
+            </div>
           </div>
         </div>
       </section>
@@ -145,7 +146,26 @@ watch(
   background-size: cover;
 }
 
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--color-fm-teal));
+  opacity: 0.25;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  /* Match the image's border-radius */
+  z-index: 0;
+}
+
 .vc-image-1 {
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30% !important;
 }
 </style>

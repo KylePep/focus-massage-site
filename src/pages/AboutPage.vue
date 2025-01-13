@@ -1,4 +1,5 @@
 <script setup>
+import Specialists from "../components/Specialists.vue";
 import WhoWeAre from "../components/WhoWeAre.vue";
 import WhyFM from "../components/WhyFM.vue";
 
@@ -13,6 +14,8 @@ import WhyFM from "../components/WhyFM.vue";
     <WhoWeAre />
 
     <WhyFM />
+
+    <Specialists />
 
   </div>
 
