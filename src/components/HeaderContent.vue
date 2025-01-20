@@ -1,12 +1,26 @@
 <script setup>
 import { ref } from "vue";
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 
 const props = defineProps([
   'page'
 ]);
 const isBgLoaded = ref(false);
 const isImgLoaded = ref(false);
+
+const route = useRoute()
+
+function createNameFromParams() {
+  const serviceString = new String(route.params.serviceId)
+  const strArr = serviceString.split(/([A-Z][a-z]*)/).filter(Boolean);
+
+  let newName = ""
+  strArr.forEach(str => {
+    newName += " " + str
+  });
+  return newName;
+
+}
 </script>
 
 <template>
@@ -93,7 +107,7 @@ const isImgLoaded = ref(false);
         <RouterLink :to="{ name: 'Home' }" class="border-b-2 border-transparent hover:border-white">Home</RouterLink> /
         <RouterLink :to="{ name: 'Service' }" class="border-b-2 border-transparent hover:border-white">Service
         </RouterLink> /
-        <span>Details</span>
+        <span class="capitalize">{{ createNameFromParams() }}</span>
       </h2>
     </div>
 
