@@ -9,7 +9,6 @@ import PricingCarousel from './PricingCarousel.vue'
 <template>
   <SectionLayout width="xl">
     <NewClientOffer />
-
     <div class="grid grid-cols-2">
       <section class=" col-span-2 lg:col-span-1 space-y-4 bg-white lg:ps-48 py-12 lg:py-24 lg:pe-8 px-4">
         <h1 class="text-3xl font-semibold">
