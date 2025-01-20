@@ -7,17 +7,25 @@ import SectionTitle from "./SectionTitle.vue";
 
 <template>
   <SectionLayout width="base">
-    <SectionTitle>
-      Your Specialist
-      <template #subtitle>
-        Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an cule dicta iriure at
-        phaedrum.
-      </template>
-    </SectionTitle>
+    <div class="space-y-16 mb-10">
 
-    <section>
+      <SectionTitle>
+        Your Specialist
+        <template #subtitle>
+          Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an cule dicta iriure at
+          phaedrum.
+        </template>
+      </SectionTitle>
 
-    </section>
+      <section class="grid grid-cols-3 ">
+        <div class="relative col-span-3 lg:col-span-1 lg:col-start-2 p-4 text-center space-y-2 group">
+          <img class="rounded-sm" src="/img/DanaHead.jpg" alt="Dana Whalen Massage Therapist">
+          <h1 class="font-light">Registered Massage Therapist</h1>
+          <h2 class="text-lg font-semibold">Dana Whalen</h2>
+          <div class="absolute bottom-0 left-0 w-0 group-hover:w-full border-b-2 border-blue-500 duration-1000"></div>
+        </div>
+      </section>
+    </div>
   </SectionLayout>
 </template>
 
