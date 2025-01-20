@@ -64,6 +64,22 @@ const isImgLoaded = ref(false);
     </div>
 
   </section>
+
+  <section v-if="page == 'Service'"
+    class="relative grid grid-cols-2 bg-white lg:text-xl leading-tight duration-1000 py-32 px-4">
+    <!-- Background container -->
+    <div
+      class="background-image flex flex-col justify-center items-center absolute inset-0 bg-gray-300 transition-opacity duration-500"
+      :style="{ backgroundImage: 'linear-gradient(to bottom, rgba(128, 128, 128, 0.6) 80%, rgba(128, 128, 128, 0.6)), url(https://images.unsplash.com/photo-1556760544-74068565f05c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }"
+      :class="{ 'opacity-0': isBgLoaded, 'opacity-100': !isBgLoaded }" @load="isBgLoaded = true">
+      <h1 class="font-bold text-2xl lg:text-4xl text-white">Services</h1>
+      <h2 class="flex text-white mt-4 gap-2">
+        <RouterLink :to="{ name: 'Home' }" class="border-b-2 border-transparent hover:border-white">Home</RouterLink> /
+        <span>Service</span>
+      </h2>
+    </div>
+
+  </section>
 </template>
 
 <style scoped>
