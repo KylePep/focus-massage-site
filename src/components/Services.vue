@@ -1,4 +1,5 @@
 <script setup>
+import { useRoute } from "vue-router";
 import SectionLayout from "../layouts/SectionLayout.vue";
 import AromaIcon from "./Icons/AromaIcon.vue";
 import ExerciseIcon from "./Icons/ExerciseIcon.vue";
@@ -8,6 +9,8 @@ import SportsRehabIcon from "./Icons/SportsRehabIcon.vue";
 import VehicleIcon from "./Icons/VehicleIcon.vue";
 import SectionTitle from "./SectionTitle.vue";
 import ServiceCard from "./ServiceCard.vue";
+
+const route = useRoute()
 
 </script>
 
@@ -38,7 +41,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard id="homeCare" class="hidden lg:flex">
+        <ServiceCard :class="route.name == 'Home' ? 'hidden lg:flex' : ''" id="homeCare">
           <template #icon>
             <ExerciseIcon />
           </template>
@@ -52,7 +55,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard id="aromaTherapy" class="hidden lg:flex">
+        <ServiceCard :class="route.name == 'Home' ? 'hidden lg:flex' : ''" id="aromaTherapy">
           <template #icon>
             <AromaIcon />
           </template>
@@ -78,7 +81,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard id="relaxMassage" class="hidden lg:flex">
+        <ServiceCard :class="route.name == 'Home' ? 'hidden lg:flex' : ''" id="relaxMassage">
           <template #icon>
             <RelaxIcon />
           </template>
