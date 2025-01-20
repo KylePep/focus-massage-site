@@ -21,7 +21,7 @@ const routes = [
     component: loadPage('ServicePage')
   },
   {
-    path: '/service-details',
+    path: '/service/:serviceId',
     name: 'ServiceDetails',
     component: loadPage('ServiceDetailsPage')
   }

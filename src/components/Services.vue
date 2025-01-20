@@ -25,7 +25,7 @@ import ServiceCard from "./ServiceCard.vue";
       </SectionTitle>
 
       <section class="grid grid-cols-3 gap-4">
-        <ServiceCard>
+        <ServiceCard id="sportsRehab">
           <template #icon>
             <SportsRehabIcon />
           </template>
@@ -38,7 +38,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard class="hidden lg:flex">
+        <ServiceCard id="homeCare" class="hidden lg:flex">
           <template #icon>
             <ExerciseIcon />
           </template>
@@ -52,7 +52,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard class="hidden lg:flex">
+        <ServiceCard id="aromaTherapy" class="hidden lg:flex">
           <template #icon>
             <AromaIcon />
           </template>
@@ -65,7 +65,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard>
+        <ServiceCard id="physiotherapy">
           <template #icon>
             <PhysioTherapyIcon />
           </template>
@@ -78,7 +78,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard class="hidden lg:flex">
+        <ServiceCard id="relaxMassage" class="hidden lg:flex">
           <template #icon>
             <RelaxIcon />
           </template>
@@ -91,7 +91,7 @@ import ServiceCard from "./ServiceCard.vue";
           </template>
         </ServiceCard>
 
-        <ServiceCard>
+        <ServiceCard id="vehicleInjury">
           <template #icon>
             <VehicleIcon />
           </template>

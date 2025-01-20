@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
+const props = defineProps(['id']);
 
 </script>
 <template>
@@ -16,10 +17,10 @@ import { RouterLink } from "vue-router";
       <slot name="content" />
     </p>
 
-    <RouterLink :to="{ name: 'About' }"
+    <router-link :to="{ name: 'ServiceDetails', params: { serviceId: props.id } }"
       class="relative flex justify-center z-10 text-lg font-black group-hover:-translate-y-6 text-transparent group-hover:text-blue-500 duration-1000 py-4">
       Read more
-    </RouterLink>
+    </router-link>
 
     <i class="absolute -right-16 -bottom-16 h-64 w-64 text-transparent group-hover:text-black/10 duration-1000">
       <slot name="icon" />
