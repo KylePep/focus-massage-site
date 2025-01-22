@@ -14,13 +14,13 @@ import PricingCarousel from './PricingCarousel.vue'
 
       <div class="grid grid-cols-2 py-12 px-4">
 
-        <section class="image-wrapper col-span-2 lg:col-span-1 h-96 space-y-4 px-4 my-auto">
+        <section class="image-wrapper col-span-2 lg:col-span-1 h-96 space-y-4 px-4">
           <div class="background-image vc-image-1 relative h-full">
 
           </div>
         </section>
 
-        <section class=" col-span-2 lg:col-span-1 space-y-4 py-12 lg:py-24 px-8">
+        <section class=" col-span-2 lg:col-span-1 space-y-4 px-8">
           <h2 class="text-4xl font-semibold text-gray-600">
             Frequently Asked Questions
           </h2>

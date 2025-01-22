@@ -1,28 +1,26 @@
 <script setup>
 import { nextTick, ref } from "vue";
+import FAQCard from "./FAQCard.vue";
 
-
-const accordionState = ref([true, false, false])
-
-function buttonClasses(state) {
-  return {
-    true: 'mdi mdi-plus',
-    false: 'mdi mdi-close'
-  }[state]
-}
+const faqs = ref([
+  { question: 'What is physiotherapy and how can I benefit?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: true },
+  { question: 'What is involved in the initial consultation?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: false },
+  { question: 'Does insurance cover your services?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: false },
+  { question: 'What if I was injured through a car accident?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: false },
+])
 
 function setAccordionClass(index) {
-  const newValues = []
-  accordionState.value.forEach((a, i) => {
+  // const newValues = []
+  faqs.value.forEach((a, i) => {
     if (i != index) {
-      newValues[i] = false;
+      faqs.value[i].state = false;
     } else {
-      newValues[i] = !accordionState.value[index]
+      faqs.value[i].state = !faqs.value[index].state
     }
   });
 
-  nextTick(() =>
-    accordionState.value = newValues)
+  // nextTick(() =>
+  //   faqs.value = newValues)
 
 }
 
@@ -32,64 +30,7 @@ function setAccordionClass(index) {
 <template>
   <div class="min-h-72 space-y-4">
 
-
-    <section class="flex border border-gray-300">
-      <button @click="setAccordionClass(0)" class="flex flex-col bg-gray-200 p-4">
-        <i :class="buttonClasses(accordionState[0])"></i>
-      </button>
-
-      <div class="p-4">
-        <h1 class="text-xl font-semibold pb-2">
-          Question
-        </h1>
-
-        <p :class="accordionState[0] ? 'h-24' : 'h-0'" class="text-sm duration-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-        </p>
-
-      </div>
-    </section>
-
-    <section class="flex border border-gray-300">
-      <button @click="setAccordionClass(1)" class="flex flex-col bg-gray-200 p-4">
-        <i :class="buttonClasses(accordionState[1])"></i>
-      </button>
-
-      <div class="p-4">
-        <h1 class="text-xl font-semibold pb-2">
-          Question
-        </h1>
-
-        <p :class="accordionState[1] ? 'h-24' : 'h-0'" class="text-sm duration-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-        </p>
-
-      </div>
-    </section>
-
-    <section class="flex border border-gray-300">
-      <button @click="setAccordionClass(2)" class="flex flex-col bg-gray-200 p-4">
-        <i :class="buttonClasses(accordionState[2])"></i>
-      </button>
-
-      <div class="p-4">
-        <h1 class="text-xl font-semibold pb-2">
-          Question
-        </h1>
-
-        <p :class="accordionState[2] ? 'h-24' : 'h-0'" class="text-sm duration-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-        </p>
-
-      </div>
-    </section>
-
+    <FAQCard v-for="faq, index in faqs" :key="index" :id="index" :faq="faq" @setAccordionClass="setAccordionClass" />
 
   </div>
 </template>
