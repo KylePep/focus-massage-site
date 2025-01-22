@@ -24,7 +24,7 @@ function setAccordionClass() {
     </button>
 
     <div class="p-4">
-      <h1 class="text-xl font-semibold pb-2">
+      <h1 class="lg:text-xl font-semibold pb-2">
         {{ faq.question }}
       </h1>
 

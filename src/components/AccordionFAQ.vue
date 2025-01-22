@@ -10,7 +10,6 @@ const faqs = ref([
 ])
 
 function setAccordionClass(index) {
-  // const newValues = []
   faqs.value.forEach((a, i) => {
     if (i != index) {
       faqs.value[i].state = false;
@@ -18,10 +17,6 @@ function setAccordionClass(index) {
       faqs.value[i].state = !faqs.value[index].state
     }
   });
-
-  // nextTick(() =>
-  //   faqs.value = newValues)
-
 }
 
 </script>
@@ -36,27 +31,4 @@ function setAccordionClass(index) {
 </template>
 
 
-<style scoped>
-/* Define the transition */
-.accordion-enter-active,
-.accordion-leave-active {
-  transition: max-height 0.3s ease, opacity 0.3s ease;
-}
-
-.accordion-enter-from,
-.accordion-leave-to {
-  max-height: 0;
-  opacity: 0;
-}
-
-.accordion-enter-to,
-.accordion-leave-from {
-  max-height: 500px;
-  opacity: 1;
-}
-
-/* Prevent overflow clipping during transition */
-p {
-  overflow: hidden;
-}
-</style>
+<style scoped></style>

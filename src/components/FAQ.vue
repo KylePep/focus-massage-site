@@ -2,7 +2,6 @@
 import SectionLayout from "../layouts/SectionLayout.vue";
 import AccordionFAQ from "./AccordionFAQ.vue";
 import NewClientOffer from "./NewClientOffer.vue";
-import PricingCarousel from './PricingCarousel.vue'
 
 </script>
 
@@ -12,16 +11,16 @@ import PricingCarousel from './PricingCarousel.vue'
     <NewClientOffer />
     <SectionLayout width="base">
 
-      <div class="grid grid-cols-2 py-12 px-4">
+      <div class="grid grid-cols-2 py-12 lg:px-4">
 
-        <section class="image-wrapper col-span-2 lg:col-span-1 h-96 space-y-4 px-4">
+        <section class="image-wrapper col-span-2 lg:col-span-1 h-96 space-y-4 px-4 my-12">
           <div class="background-image vc-image-1 relative h-full">
 
           </div>
         </section>
 
-        <section class=" col-span-2 lg:col-span-1 space-y-4 px-8">
-          <h2 class="text-4xl font-semibold text-gray-600">
+        <section class=" col-span-2 lg:col-span-1 space-y-4 px-4 lg:px-8">
+          <h2 class="text-4xl font-semibold text-gray-600 pb-2">
             Frequently Asked Questions
           </h2>
           <AccordionFAQ />
@@ -37,17 +36,8 @@ import PricingCarousel from './PricingCarousel.vue'
 .background-image {
   background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 80%, rgba(255, 255, 255, 0.25)),
-    url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    url('https://images.unsplash.com/photo-1617952986600-802f965dcdbc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-position: 0% 25%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.background-image-white {
-  background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 80%, rgba(255, 255, 255, 0.9)),
-    url('https://img.freepik.com/free-vector/cutout-purple-blue_78370-131.jpg');
-  background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
