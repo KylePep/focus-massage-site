@@ -2,6 +2,7 @@
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import { SERVICE_ITEMS } from "../data/index.js";
+import DetailsCard from "../components/DetailsCard.vue";
 
 const services = ref(SERVICE_ITEMS)
 
@@ -15,8 +16,8 @@ const serviceData = computed(() => {
 
 
 <template>
-  <div class="space-y-16 lg:space-y-32">
-    {{ serviceData }}
+  <div class="space-y-16 lg:space-y-32 pt-16">
+    <DetailsCard :service="serviceData" />
   </div>
 </template>
 
