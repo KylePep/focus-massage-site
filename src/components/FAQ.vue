@@ -14,7 +14,7 @@ import PricingCarousel from './PricingCarousel.vue'
 
       <div class="grid grid-cols-2 py-12 px-4">
 
-        <section class="image-wrapper col-span-2 lg:col-span-1 min-h-96 space-y-4 px-4">
+        <section class="image-wrapper col-span-2 lg:col-span-1 h-96 space-y-4 px-4 my-auto">
           <div class="background-image vc-image-1 relative h-full">
 
           </div>
