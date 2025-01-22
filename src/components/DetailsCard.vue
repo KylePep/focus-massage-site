@@ -9,7 +9,7 @@ const props = defineProps(['service'])
 <template>
   <SectionLayout width="base">
     <div class="grid grid-cols-4 gap-8">
-      <section class="col-span-3 space-y-8">
+      <section class="col-span-4 lg:col-span-3 space-y-8">
         <img :src="service.image" class="" :alt="service.title">
 
         <h1 class="text-4xl">{{ service.title }}</h1>
@@ -28,8 +28,13 @@ const props = defineProps(['service'])
 
       </section>
 
-      <section>
-        Other Stuff
+      <!-- Green Section -->
+      <section class="relative bg-green-200 col-span-4 lg:col-span-1">
+        <!-- Sticky OtherStuff -->
+        <div class="sticky top-32 bg-red-200 p-4">
+          <h2 class="font-bold">OtherStuff</h2>
+          <p>Additional information or content goes here.</p>
+        </div>
       </section>
 
     </div>

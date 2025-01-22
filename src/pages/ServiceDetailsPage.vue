@@ -16,7 +16,7 @@ const serviceData = computed(() => {
 
 
 <template>
-  <div class="space-y-16 lg:space-y-32 pt-16">
+  <div class="space-y-16 lg:space-y-32 py-16">
     <DetailsCard :service="serviceData" />
   </div>
 </template>
