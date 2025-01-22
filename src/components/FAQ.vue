@@ -2,6 +2,10 @@
 import SectionLayout from "../layouts/SectionLayout.vue";
 import AccordionFAQ from "./AccordionFAQ.vue";
 import NewClientOffer from "./NewClientOffer.vue";
+import { FAQ_ITEMS } from "../data/index.js";
+import { ref } from "vue";
+
+const faqs = ref(FAQ_ITEMS)
 
 </script>
 
@@ -23,7 +27,7 @@ import NewClientOffer from "./NewClientOffer.vue";
           <h2 class="text-4xl font-semibold text-gray-600 pb-2">
             Frequently Asked Questions
           </h2>
-          <AccordionFAQ />
+          <AccordionFAQ :faqs />
         </section>
 
       </div>

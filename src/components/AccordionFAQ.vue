@@ -1,20 +1,16 @@
 <script setup>
-import { nextTick, ref } from "vue";
+import { ref } from "vue";
 import FAQCard from "./FAQCard.vue";
 
-const faqs = ref([
-  { question: 'What is physiotherapy and how can I benefit?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: true },
-  { question: 'What is involved in the initial consultation?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: false },
-  { question: 'Does insurance cover your services?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: false },
-  { question: 'What if I was injured through a car accident?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.', state: false },
-])
+const props = defineProps(['faqs'])
+const faqList = ref(props.faqs)
 
 function setAccordionClass(index) {
-  faqs.value.forEach((a, i) => {
+  faqList.value.forEach((a, i) => {
     if (i != index) {
-      faqs.value[i].state = false;
+      faqList.value[i].state = false;
     } else {
-      faqs.value[i].state = !faqs.value[index].state
+      faqList.value[i].state = !faqList.value[index].state
     }
   });
 }
