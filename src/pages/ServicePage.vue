@@ -1,6 +1,6 @@
 <script setup>
 import Services from "../components/Services.vue";
-import Offerings from "../components/Offerings.vue";
+import FAQ from "../components/FAQ.vue";
 
 </script>
 
@@ -8,8 +8,7 @@ import Offerings from "../components/Offerings.vue";
 <template>
   <div class="space-y-16 lg:space-y-32 pt-16">
     <Services />
-
-    <Offerings />
+    <FAQ />
   </div>
 </template>
 
