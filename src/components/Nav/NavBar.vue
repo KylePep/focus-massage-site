@@ -33,7 +33,7 @@ onUnmounted(() => {
 
 <template>
 
-  <nav class="duration-1000 py-4 w-full bg-white shadow">
+  <nav class="duration-1000 py-4 w-full bg-white">
 
     <!-- Primary Navigation Menu -->
     <div class="relative flex justify-between h-16 mx-auto px-4 sm:px-6 lg:px-8 ">
