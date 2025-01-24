@@ -6,8 +6,8 @@ const emit = defineEmits(['setAccordionClass'])
 
 const buttonClasses = computed(() => {
   return {
-    true: 'mdi mdi-plus',
-    false: 'mdi mdi-close'
+    true: 'mdi mdi-close',
+    false: 'mdi mdi-plus'
   }[props.faq.state]
 })
 

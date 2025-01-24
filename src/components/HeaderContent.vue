@@ -89,7 +89,7 @@ function createNameFromParams() {
       <h1 class="font-bold text-2xl lg:text-4xl text-white">Services</h1>
       <h2 class="flex text-white mt-4 gap-2">
         <RouterLink :to="{ name: 'Home' }" class="border-b-2 border-transparent hover:border-white">Home</RouterLink> /
-        <span>Service</span>
+        <span>Services</span>
       </h2>
     </div>
 
@@ -105,7 +105,7 @@ function createNameFromParams() {
       <h1 class="font-bold text-2xl lg:text-4xl text-white">Services Details</h1>
       <h2 class="flex text-white mt-4 gap-2">
         <RouterLink :to="{ name: 'Home' }" class="border-b-2 border-transparent hover:border-white">Home</RouterLink> /
-        <RouterLink :to="{ name: 'Service' }" class="border-b-2 border-transparent hover:border-white">Service
+        <RouterLink :to="{ name: 'Service' }" class="border-b-2 border-transparent hover:border-white">Services
         </RouterLink> /
         <span class="capitalize">{{ createNameFromParams() }}</span>
       </h2>
