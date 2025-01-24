@@ -33,13 +33,14 @@ const services = ref(SERVICE_ITEMS)
 
     <div>
       <ul class="space-y-4">
-        <li class="font-bold text-base text-fm-blue">Address: <span class="font-normal text-sm text-fm-pink">1217 3rd St
+        <li class="font-bold text-base text-fm-pink">Address: <span class="font-normal text-sm text-fm-pink">1217 3rd
+            St
             S Suite 105,
             Nampa, ID
             83651</span></li>
-        <li class="font-bold text-base text-fm-blue">Phone: <span
+        <li class="font-bold text-base text-fm-pink">Phone: <span
             class="font-normal text-sm text-fm-pink">xxx-xxx-xxxx</span></li>
-        <li class="font-bold text-base text-fm-blue">Email: <span
+        <li class="font-bold text-base text-fm-pink">Email: <span
             class="font-normal text-sm text-fm-pink">email@emai.com</span></li>
       </ul>
     </div>

@@ -18,8 +18,8 @@ const services = ref(SERVICE_ITEMS)
         </div>
         <ul class="space-y-1 lg:text-sm">
           <li v-for="service, index in services">
-            <router-link :to="{ name: 'ServiceDetails', params: { serviceId: index } }" class="border-b"
-              :class="route.params.serviceId == index ? 'border-blue-500' : 'border-transparent'">
+            <router-link :to="{ name: 'ServiceDetails', params: { serviceId: index } }" class="border-b pb-0.5"
+              :class="route.params.serviceId == index ? 'border-fm-pink' : 'border-transparent'">
               {{ service.title }}
             </router-link>
           </li>
