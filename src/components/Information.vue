@@ -89,7 +89,7 @@ import SectionLayout from "../layouts/SectionLayout.vue";
         <div class="flex-1 flex flex-col justify-around space-y-8 lg:space-y-0">
           <a href="https://danawhalen.glossgenius.com/services" class="w-full flex justify-center">
             <button
-              class="bg-blue-500 px-8 lg:px-16 py-2 lg:py-4 text-lg lg:text-4xl text-white font-black rounded hover:bg-blue-800 duration-300">Book
+              class="bg-fm-orange px-8 lg:px-16 py-2 lg:py-4 text-lg lg:text-4xl text-white font-black rounded hover:bg-fm-blue duration-300">Book
               Now</button>
           </a>
           <div>

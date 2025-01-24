@@ -34,17 +34,17 @@ watch(
 
         <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
           <button @click="videoPlayerShow = true"
-            class="group z-10 bg-blue-600 h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
+            class="group z-10 bg-fm-teal h-16 w-16 rounded-full hover:h-20 hover:w-20 duration-300 border-4 border-white shadow"><i
               class="mdi mdi-play text-4xl text-white group-hover:text-5xl duration-300"></i>
           </button>
-          <div class="absolute group bg-blue-500 h-14 w-14 rounded-full duration-300 shadow animate-ping">
+          <div class="absolute group bg-fm-teal h-14 w-14 rounded-full duration-300 shadow animate-ping">
           </div>
         </div>
       </section>
 
       <section class="flex flex-col justify-center col-span-2 lg:col-span-1 space-y-6 px-8 py-12">
         <div>
-          <h1 class="text-2xl font-semibold"><span class="text-blue-500">Positive Effects</span> of </h1>
+          <h1 class="text-2xl font-semibold"><span class="text-fm-orange">Positive Effects</span> of </h1>
           <h2 class="text-3xl font-semibold">
             Dialia Registered Massage Therapy
           </h2>
@@ -62,15 +62,15 @@ watch(
 
         <div class="flex flex-col lg:flex-row gap-8 items-start lg:items-center pb-8 lg:pb-0">
           <RouterLink :to="{ name: 'About' }"
-            class="bg-blue-500 px-6 lg:px-12 py-2 rounded-sm text-white font-bold hover:bg-blue-800 duration-300">Read
+            class="bg-fm-orange px-6 lg:px-12 py-2 rounded-sm text-white font-bold hover:bg-fm-teal duration-300">Read
             more</RouterLink>
           <a href="tel:xxx-xxx-xxxx" class="flex items-center">
-            <div class="border-2 border-gray-400 rounded-full p-1 shadow">
-              <div class="h-10 w-10 bg-blue-500 rounded-full animate-pulse flex items-center justify-center">
+            <div class="border-2 border-fm-orange rounded-full p-1 shadow">
+              <div class="h-10 w-10 bg-fm-orange rounded-full animate-pulse flex items-center justify-center">
                 <i class="mdi mdi-phone  text-3xl text-white "></i>
               </div>
             </div>
-            <span class="text-3xl text-blue-500 mx-2">234-567-8910</span>
+            <span class="text-3xl text-fm-orange mx-2">234-567-8910</span>
           </a>
         </div>
 

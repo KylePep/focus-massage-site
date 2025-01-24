@@ -18,12 +18,12 @@ function setAccordionClass() {
 
 
 <template>
-  <section class="flex border border-gray-300">
-    <button @click="setAccordionClass()" class="flex flex-col bg-gray-200 p-4">
-      <i :class="buttonClasses"></i>
+  <section class="flex border border-fm-teal">
+    <button @click="setAccordionClass()" class="flex flex-col bg-fm-blue p-4">
+      <i :class="buttonClasses" class="text-fm-pink"></i>
     </button>
 
-    <div class="p-4">
+    <div class="p-4 bg-fm-teal text-fm-pink">
       <h1 class="lg:text-xl font-semibold pb-2">
         {{ faq.question }}
       </h1>

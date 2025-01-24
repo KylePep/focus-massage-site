@@ -13,14 +13,14 @@ import PricingCarousel from './PricingCarousel.vue'
     <div class="grid grid-cols-2">
       <section class=" col-span-2 lg:col-span-1 space-y-4 bg-white lg:ps-48 py-12 lg:py-24 lg:pe-8 px-4">
         <h1 class="text-3xl font-semibold">
-          <span class="text-2xl"><mark class="bg-transparent text-blue-500">Benefits</mark> of</span><br>
+          <span class="text-2xl"><mark class="bg-transparent text-fm-orange">Benefits</mark> of</span><br>
           Registered Massage Therapy
         </h1>
         <p class="font-light">There are remarkable benefits to be achieved through regular massage therapy treatments
           from a Registered
           Massage Therapist. Massage therapy can be an important part of your health maintenance plan.</p>
         <ul>
-          <li class="text-blue-500"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing or
+          <li class="text-fm-orange"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing or
             eliminating pain</li>
           <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving joint mobility</li>
           <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Circulatory problems</li>
@@ -33,7 +33,7 @@ import PricingCarousel from './PricingCarousel.vue'
         class="background-image-white col-span-2 lg:col-span-1 space-y-4 lg:pe-48 pt-6 pb-12 lg:py-24 lg:ps-8 px-4">
         <h2 class="text-3xl font-semibold">
           Therapy
-          <mark class="bg-transparent text-blue-500">Rates</mark>
+          <mark class="bg-transparent text-fm-orange">Rates</mark>
         </h2>
         <p class="font-light">New and returning clients are encouraged to book a massage appointment online by clicking
           the book an

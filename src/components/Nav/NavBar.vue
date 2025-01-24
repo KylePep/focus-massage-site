@@ -33,7 +33,7 @@ onUnmounted(() => {
 
 <template>
 
-  <nav class="duration-1000 py-4 w-full bg-white">
+  <nav class="duration-1000 py-4 w-full bg-fm-teal text-fm-pink">
 
     <!-- Primary Navigation Menu -->
     <div class="relative flex justify-between h-16 mx-auto px-4 sm:px-6 lg:px-8 ">
@@ -84,7 +84,7 @@ onUnmounted(() => {
       <!-- Hamburger -->
       <div class="-me-2 flex items-center sm:hidden">
         <button aria-label="nav drop down" @click="showingNavigationDropdown = !showingNavigationDropdown"
-          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+          class="inline-flex items-center justify-center p-2 rounded-md text-fm-pink hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
           <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
             <path :class="{
               hidden: showingNavigationDropdown,
@@ -112,11 +112,11 @@ onUnmounted(() => {
           Services
         </ResponsiveNavLink>
         <a target="_blank" href="https://danawhalen.glossgenius.com/services"
-          class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium hover:bg-gray-500 hover:border-gray-300 focus:outline-none focus:bg-gray-500 focus:border-gray-300 transition duration-150 ease-in-out">
+          class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium transition duration-150 ease-in-out">
           Book
         </a>
         <button
-          class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium hover:bg-gray-500 hover:border-gray-300 focus:outline-none focus:bg-gray-500 focus:border-gray-300 transition duration-150 ease-in-out">
+          class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium transition duration-150 ease-in-out">
           Contact
         </button>
       </div>
@@ -126,7 +126,7 @@ onUnmounted(() => {
   </nav>
 
   <button @click="scrollToTop" :class="isAtTop ? 'right-0' : '-right-40'"
-    class="duration-1000 fixed bottom-0 m-8 bg-blue-500 h-8 w-8 lg:h-12 lg:w-12 lg:text-3xl rounded-full mdi mdi-arrow-up text-white"></button>
+    class="duration-1000 fixed bottom-0 m-8 bg-fm-orange hover:bg-fm-blue h-8 w-8 lg:h-12 lg:w-12 lg:text-3xl rounded-full mdi mdi-arrow-up text-white"></button>
 </template>
 
 

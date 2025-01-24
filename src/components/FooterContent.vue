@@ -10,9 +10,9 @@ const services = ref(SERVICE_ITEMS)
 
 <template>
   <div class="text-xs lg:text-lg z-50">
-    <div class="bg-gray-900 px-6 lg:px-40 grid grid-cols-4 gap-1 gap-y-8 lg:gap-20 text-white/90 py-12">
+    <div class="bg-fm-teal px-6 lg:px-40 grid grid-cols-4 gap-1 gap-y-8 lg:gap-20 text-fm-pink py-12">
 
-      <section class="col-span-4  lg:col-start-3 lg:col-span-1 space-y-4 lg:flex flex-col justify-start">
+      <section class="col-span-4 lg:col-span-1 space-y-4 lg:flex flex-col justify-start">
         <div class="font-bold text-base lg:text-lg">
           Services
         </div>
@@ -38,15 +38,15 @@ const services = ref(SERVICE_ITEMS)
         </ul>
         <div class="flex gap-4">
           <a target="_blank" href="https://www.facebook.com/profile.php?id=100090973550375&mibextid=ZbWKwL"
-            class="bg-gray-600 rounded-full h-8 w-8 flex justify-center items-center">
+            class="bg-fm-blue rounded-full h-8 w-8 flex justify-center items-center">
             <i class="relative mdi mdi-facebook text-xl"></i>
           </a>
           <a target="_blank" href="https://www.instagram.com/focusmassagebydana"
-            class="bg-gray-600 rounded-full h-8 w-8 flex justify-center items-center">
+            class="bg-fm-blue rounded-full h-8 w-8 flex justify-center items-center">
             <i class="relative mdi mdi-instagram text-xl"></i>
           </a>
           <a target="_blank" href="https://danawhalen.glossgenius.com/"
-            class="bg-gray-600 rounded-full h-8 w-8 flex justify-center items-center">
+            class="bg-fm-blue rounded-full h-8 w-8 flex justify-center items-center">
             <i class="relative mdi mdi-alpha-g text-4xl"></i>
           </a>
 
@@ -100,7 +100,7 @@ const services = ref(SERVICE_ITEMS)
 
 
     </div>
-    <div class="bg-black py-2 lg:py-4 text-center text-white">
+    <div class="bg-fm-blue py-2 lg:py-4 text-center text-white">
       Copyright 2024 by FocusMassage. All rights reserved
     </div>
   </div>

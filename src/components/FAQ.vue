@@ -58,7 +58,7 @@ const faqs = ref(FAQ_ITEMS)
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(var(--color-fm-teal));
+  background-color: rgba(var(--color-fm-orange));
   opacity: 0.25;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   /* Match the image's border-radius */

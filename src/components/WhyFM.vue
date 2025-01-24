@@ -35,7 +35,7 @@ const activeFrame = ref('mission');
             </p>
           </div>
           <div :style="activeFrame == 'mission' ? 'width: 100%' : 'width: 0'"
-            class="absolute bottom-0 left-0 border-b-2 border-blue-500 duration-500">
+            class="absolute bottom-0 left-0 border-b-2 border-fm-blue duration-500">
           </div>
         </button>
 
@@ -50,7 +50,7 @@ const activeFrame = ref('mission');
             </p>
           </div>
           <div :style="activeFrame == 'values' ? 'width: 100%' : 'width: 0'"
-            class="absolute bottom-0 left-0 border-b-2 border-blue-500 duration-500"></div>
+            class="absolute bottom-0 left-0 border-b-2 border-fm-blue duration-500"></div>
         </button>
 
         <button @click="activeFrame = 'quality'" class="group relative lg:px-16">
@@ -64,7 +64,7 @@ const activeFrame = ref('mission');
             </p>
           </div>
           <div :style="activeFrame == 'quality' ? 'width: 100%' : 'width: 0'"
-            class="absolute bottom-0 left-0 border-b-2 border-blue-500 duration-500"></div>
+            class="absolute bottom-0 left-0 border-b-2 border-fm-blue duration-500"></div>
         </button>
 
       </section>
@@ -85,7 +85,7 @@ const activeFrame = ref('mission');
                 </p>
 
                 <ul>
-                  <li class="text-blue-500"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
+                  <li class="text-fm-orange"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
                     or
                     eliminating pain</li>
                   <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving joint mobility</li>
@@ -112,7 +112,7 @@ const activeFrame = ref('mission');
                   supporting our members and serving our stakeholders.
                 </p>
                 <ul>
-                  <li class="text-blue-500"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
+                  <li class="text-fm-orange"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
                     or
                     eliminating pain</li>
                   <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving joint mobility</li>
@@ -141,7 +141,7 @@ const activeFrame = ref('mission');
                   supporting our members and serving our stakeholders.
                 </p>
                 <ul>
-                  <li class="text-blue-500"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
+                  <li class="text-fm-orange"><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Reducing
                     or
                     eliminating pain</li>
                   <li><span class="mdi mdi-star-four-points-circle-outline me-4"></span>Improving joint mobility</li>

@@ -22,12 +22,12 @@ import SectionTitle from "./SectionTitle.vue";
           <img class="rounded-sm" src="/img/DanaHead.jpg" alt="Dana Whalen Massage Therapist">
           <h1 class="font-light">Registered Massage Therapist</h1>
           <h2 class="text-lg font-semibold">Dana Whalen</h2>
-          <div class="absolute bottom-1/4 -left-96 group-hover:left-0 duration-1000 bg-blue-500 rounded-r-full">
+          <div class="absolute bottom-1/4 -left-96 group-hover:left-0 duration-1000 bg-fm-teal rounded-r-full">
             <ul class="flex space-x-8 px-8 py-2 font-bold text-white">
               <li>6 years experience</li>
             </ul>
           </div>
-          <div class="absolute bottom-0 left-0 w-0 group-hover:w-full border-b-2 border-blue-500 duration-1000"></div>
+          <div class="absolute bottom-0 left-0 w-0 group-hover:w-full border-b-2 border-fm-blue duration-1000"></div>
         </div>
       </section>
     </div>

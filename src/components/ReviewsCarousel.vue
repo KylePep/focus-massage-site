@@ -50,9 +50,9 @@ const reviews = ref([
     </SplideTrack>
     <div class="splide__arrows relative lg:static mt-8">
       <button
-        class="splide__arrow splide__arrow--prev mdi mdi-arrow-left text-4xl hover:text-blue-500 duration-300"></button>
+        class="splide__arrow splide__arrow--prev mdi mdi-arrow-left text-4xl hover:text-fm-teal duration-300"></button>
       <button
-        class="splide__arrow splide__arrow--next mdi mdi-arrow-right text-4xl hover:text-blue-500 duration-300"></button>
+        class="splide__arrow splide__arrow--next mdi mdi-arrow-right text-4xl hover:text-fm-teal duration-300"></button>
     </div>
   </Splide>
 </template>

@@ -2,6 +2,7 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import InfoOffCanvas from "../components/InfoOffCanvas.vue";
+import BookNowHeader from "../components/BookNowHeader.vue";
 
 const route = useRoute();
 const isAtTop = ref(true);
@@ -51,25 +52,8 @@ onUnmounted(() => {
 <template>
   <div class="relative flex flex-col bg-page min-h-screen overflow-x-hidden">
 
-    <section class="bg-black text-white py-1 w-full">
-      <div class="grid grid-cols-2 max-w-7xl mx-auto text-center lg:text-start">
-        <div class="lg:flex col-span-2 lg:col-span-1">
-          <div class="lg:border-r px-4 my-2">
-            Email us: <span>email@exampleemail.com</span>
-          </div>
-          <div class="px-4 my-2">
-            Call us: <span>1-234-567-8910</span>
-          </div>
-        </div>
-
-        <div class="col-span-2 lg:col-span-1 flex justify-center lg:justify-end items-center my-2">
-          <a target="_blank" href="https://danawhalen.glossgenius.com/services"
-            class="py-1 px-8 bg-white rounded text-black">
-            Book an Appointment
-          </a>
-        </div>
-      </div>
-
+    <section class="bg-fm-blue  py-1 w-full">
+      <BookNowHeader />
     </section>
 
     <nav>
