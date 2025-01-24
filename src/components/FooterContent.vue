@@ -4,7 +4,7 @@
 
 
 <template>
-  <div class="text-xs lg:text-lg">
+  <div class="text-xs lg:text-lg z-50">
     <div class="bg-gray-900 px-6 lg:px-40 grid grid-cols-4 gap-1 gap-y-8 lg:gap-20 text-white/90 py-12">
 
       <section class="col-span-4  lg:col-start-3 lg:col-span-1 space-y-4 lg:flex flex-col justify-start">

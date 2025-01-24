@@ -1,19 +1,50 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
+import { useRoute } from "vue-router";
 
-const isAtTop = ref(0);
+const route = useRoute();
+const isAtTop = ref(true);
+const isPastHeader = ref(false);
+const isAtBottom = ref(false);
+const headerBottom = ref(0);
+const footerTop = ref();
+
+const updateHeaderBottom = () => {
+  const header = document.querySelector("header");
+  if (header) {
+    headerBottom.value = header.offsetTop + header.offsetHeight;
+  }
+};
+
+const updateFooterTop = () => {
+  const footer = document.querySelector("footer");
+  if (footer) {
+    footerTop.value = footer.offsetHeight;
+  }
+};
 
 const handleScroll = () => {
-  isAtTop.value = Math.round(window.scrollY);
-}
+  const scrollY = Math.round(window.scrollY);
+  isAtTop.value = scrollY <= 0;
+  isPastHeader.value = scrollY > (headerBottom.value) / 3;
+  isAtBottom.value = scrollY >= (document.body.scrollHeight - window.innerHeight - footerTop.value);
+  console.log(isPastHeader.value, isAtBottom.value, document.body.scrollHeight - window.innerHeight - footerTop.value, scrollY)
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
+  updateFooterTop();
+  updateHeaderBottom();
+  window.addEventListener("resize", updateFooterTop); // Recalculate on window resize
+  window.addEventListener("resize", updateHeaderBottom); // Recalculate on window resize
+  window.addEventListener("scroll", handleScroll);
 });
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener("resize", updateFooterTop);
+  window.removeEventListener("resize", updateHeaderBottom);
+  window.removeEventListener("scroll", handleScroll);
 });
+
 </script>
 
 
@@ -45,11 +76,11 @@ onUnmounted(() => {
       <slot name="nav"></slot>
     </nav>
 
-    <nav class="fixed duration-1000 w-full z-20" :class="!isAtTop ? '-top-80' : 'top-0'">
+    <nav class="fixed duration-1000 w-full z-20" :class="isAtTop ? '-top-80' : 'top-0'">
       <slot name="nav"></slot>
     </nav>
 
-    <header>
+    <header id="header">
       <slot name="header"></slot>
     </header>
 
@@ -57,7 +88,51 @@ onUnmounted(() => {
       <slot />
     </main>
 
-    <footer class="">
+    <section v-if="route.name == 'ServiceDetails'" :class="isPastHeader && !isAtBottom ? 'right-0' : '-right-full'"
+      class="hidden lg:block lg:fixed w-1/3 h-screen pt-24 duration-1000">
+      <div class="flex flex-col h-full bg-white ms-8 z-20 p-4">
+        <div class="flex font-bold text-xl pb-4">
+          <h1 class="border-b-2 border-blue-500">
+            Services
+          </h1>
+        </div>
+        <ul class="space-y-4 pb-4">
+          <li class="border-b">Financial Analysis</li>
+          <li class="border-b">Business Consulting</li>
+          <li class="border-b">Corporate Finance</li>
+          <li class="border-b">Financial Planning</li>
+          <li class="border-b">Business Growth</li>
+          <li class="border-b">Wealth Management</li>
+        </ul>
+
+        <div class="flex font-bold text-xl pb-4">
+          <h2 class="border-b-2 border-blue-500">
+            Get In Touch
+          </h2>
+        </div>
+
+        <div>
+          <ul class="space-y-4">
+            <li>Address: 2726 Avenue Papineau Montreal, QC, Canada</li>
+            <li>Phone: 1-800-915-6270
+            </li>
+            <li>Email: info@example.com</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="flex py-8 space-x-8">
+            <li><i class="mdi mdi-twitter text-2xl"></i></li>
+            <li><i class="mdi mdi-facebook text-2xl"></i></li>
+            <li><i class="mdi mdi-pinterest text-2xl"></i></li>
+            <li><i class="mdi mdi-linkedin text-2xl"></i></li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="">
       <slot name="footer"></slot>
     </footer>
 
