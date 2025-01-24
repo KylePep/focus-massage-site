@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRoute } from "vue-router";
+import InfoOffCanvas from "../components/InfoOffCanvas.vue";
 
 const route = useRoute();
 const isAtTop = ref(true);
@@ -28,7 +29,6 @@ const handleScroll = () => {
   isAtTop.value = scrollY <= 0;
   isPastHeader.value = scrollY > (headerBottom.value) / 3;
   isAtBottom.value = scrollY >= (document.body.scrollHeight - window.innerHeight - footerTop.value);
-  console.log(isPastHeader.value, isAtBottom.value, document.body.scrollHeight - window.innerHeight - footerTop.value, scrollY)
 };
 
 onMounted(() => {
@@ -90,46 +90,7 @@ onUnmounted(() => {
 
     <section v-if="route.name == 'ServiceDetails'" :class="isPastHeader && !isAtBottom ? 'right-0' : '-right-full'"
       class="hidden lg:block lg:fixed w-1/3 h-screen pt-24 duration-1000">
-      <div class="flex flex-col h-full bg-white ms-8 z-20 p-4">
-        <div class="flex font-bold text-xl pb-4">
-          <h1 class="border-b-2 border-blue-500">
-            Services
-          </h1>
-        </div>
-        <ul class="space-y-4 pb-4">
-          <li class="border-b">Financial Analysis</li>
-          <li class="border-b">Business Consulting</li>
-          <li class="border-b">Corporate Finance</li>
-          <li class="border-b">Financial Planning</li>
-          <li class="border-b">Business Growth</li>
-          <li class="border-b">Wealth Management</li>
-        </ul>
-
-        <div class="flex font-bold text-xl pb-4">
-          <h2 class="border-b-2 border-blue-500">
-            Get In Touch
-          </h2>
-        </div>
-
-        <div>
-          <ul class="space-y-4">
-            <li>Address: 2726 Avenue Papineau Montreal, QC, Canada</li>
-            <li>Phone: 1-800-915-6270
-            </li>
-            <li>Email: info@example.com</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="flex py-8 space-x-8">
-            <li><i class="mdi mdi-twitter text-2xl"></i></li>
-            <li><i class="mdi mdi-facebook text-2xl"></i></li>
-            <li><i class="mdi mdi-pinterest text-2xl"></i></li>
-            <li><i class="mdi mdi-linkedin text-2xl"></i></li>
-
-          </ul>
-        </div>
-      </div>
+      <InfoOffCanvas />
     </section>
 
     <footer id="footer" class="">

@@ -1,6 +1,7 @@
 <script setup>
 import SectionLayout from "../layouts/SectionLayout.vue";
 import AccordionFAQ from "./AccordionFAQ.vue";
+import InfoOffCanvas from "./InfoOffCanvas.vue";
 
 const props = defineProps(['service'])
 </script>
@@ -27,6 +28,10 @@ const props = defineProps(['service'])
 
         <AccordionFAQ :faqs="service.faqs" />
 
+      </section>
+
+      <section class="lg:hidden col-span-4">
+        <InfoOffCanvas />
       </section>
 
     </div>

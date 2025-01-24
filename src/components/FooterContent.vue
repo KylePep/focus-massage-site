@@ -1,5 +1,10 @@
 <script setup>
+import { ref } from "vue";
+import { useRoute } from "vue-router";
+import { SERVICE_ITEMS } from "../data/index.js";
 
+const route = useRoute()
+const services = ref(SERVICE_ITEMS)
 </script>
 
 
@@ -12,12 +17,12 @@
           Services
         </div>
         <ul class="space-y-1 lg:text-sm">
-          <li>Massage Therapy</li>
-          <li>Home Care Physiotherapy</li>
-          <li>Aroma Therapy</li>
-          <li>Physiotherapy</li>
-          <li>Relaxation Massage</li>
-          <li>Vehicle Injury Treatment</li>
+          <li v-for="service, index in services">
+            <router-link :to="{ name: 'ServiceDetails', params: { serviceId: index } }" class="border-b"
+              :class="route.params.serviceId == index ? 'border-blue-500' : 'border-transparent'">
+              {{ service.title }}
+            </router-link>
+          </li>
         </ul>
       </section>
 
