@@ -5,7 +5,7 @@ import CategoryCard from './CategoryCard.vue'</script>
 
 <template>
   <SectionLayout width="base">
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4 pt-24 lg:pt-32">
 
       <CategoryCard>
         <template #icon>

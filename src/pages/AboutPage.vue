@@ -9,7 +9,7 @@ import WhyFM from "../components/WhyFM.vue";
 
 <template>
 
-  <div class="space-y-16 lg:space-y-32">
+  <div class="space-y-24 lg:space-y-32">
 
     <WhoWeAre />
 

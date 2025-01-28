@@ -18,7 +18,7 @@ const route = useRoute()
 <template>
   <SectionLayout width="base">
 
-    <div class="space-y-8">
+    <div class="space-y-8 pt-24 lg:pt-32">
       <SectionTitle>
         My Services
         <template #subtitle>

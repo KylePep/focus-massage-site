@@ -32,7 +32,7 @@ watch(
   <SectionLayout width="xl">
 
     <div id="screen-span"
-      class="background-image-white relative top-auto grid grid-cols-8 gap-2 bg-fm-pink pt-10 lg:pt-14">
+      class="background-image-white relative top-auto grid grid-cols-8 gap-2 bg-fm-pink pt-24 lg:pt-32">
 
       <section class="col-span-8 lg:col-span-3 lg:col-start-2 flex flex-col justify-center space-y-6 px-8 py-12">
         <div>

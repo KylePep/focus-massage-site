@@ -7,7 +7,7 @@ import Information from "../components/Information.vue";
 
 
 <template>
-  <div class="space-y-16 lg:space-y-32 pt-16">
+  <div class="space-y-24 lg:space-y-32">
     <Services />
     <FAQ />
     <Information />

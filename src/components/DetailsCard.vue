@@ -10,7 +10,7 @@ const props = defineProps(['service'])
 <template>
 
   <SectionLayout width="base">
-    <div class="grid grid-cols-4 lg:gap-32 ">
+    <div class="grid grid-cols-4 lg:gap-32 pt-24 lg:pt-32">
       <section class="col-span-4 lg:col-span-3 space-y-16">
         <img :src="service.image" class="rounded-sm" :alt="service.title">
 
