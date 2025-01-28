@@ -32,7 +32,7 @@ watch(
   <SectionLayout width="xl">
 
     <div id="screen-span"
-      class="background-image-white relative top-auto grid grid-cols-8 gap-2 bg-fm-pink pt-24 lg:pt-32">
+      class="background-image-white relative top-auto grid grid-cols-8 gap-2 bg-fm-pink py-24 lg:py-32">
 
       <section class="col-span-8 lg:col-span-3 lg:col-start-2 flex flex-col justify-center space-y-6 px-8 py-12">
         <div>
@@ -79,7 +79,7 @@ watch(
       </section>
 
       <section
-        class="col-span-8 lg:col-span-6 lg:col-start-2 flex flex-col lg:flex-row justify-around space-y-8 lg:space-y-0 mt-16 mb-32">
+        class="col-span-8 lg:col-span-6 lg:col-start-2 flex flex-col lg:flex-row justify-around space-y-16 lg:space-y-0 mt-16 mb-32">
         <CallOutCard>
           <template #icon>
             <HappyIcon />

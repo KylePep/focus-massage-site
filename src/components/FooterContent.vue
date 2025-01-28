@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 import { SERVICE_ITEMS } from "../data/index.js";
+import KylePepButton from "./KylePepButton.vue";
 
 const route = useRoute()
 const services = ref(SERVICE_ITEMS)
@@ -13,12 +14,13 @@ const services = ref(SERVICE_ITEMS)
     <div class="bg-fm-teal px-6 lg:px-40 grid grid-cols-4 gap-1 gap-y-8 lg:gap-20 text-fm-pink py-12">
 
       <section class="col-span-4 lg:col-span-1 space-y-4 lg:flex flex-col justify-start">
-        <div class="font-bold text-base lg:text-lg">
+        <div class="font-bold text-lg">
           Services
         </div>
-        <ul class="space-y-2 lg:space-y-1 lg:text-sm">
+        <ul class="space-y-4 lg:space-y-1 lg:text-sm">
           <li v-for="service, index in services">
-            <router-link :to="{ name: 'ServiceDetails', params: { serviceId: index } }" class="border-b pb-0.5"
+            <router-link :to="{ name: 'ServiceDetails', params: { serviceId: index } }"
+              class="font-semibold border-b pb-0.5 hover:text-fm-orange"
               :class="route.params.serviceId == index ? 'border-fm-pink' : 'border-transparent'">
               {{ service.title }}
             </router-link>
@@ -27,14 +29,15 @@ const services = ref(SERVICE_ITEMS)
       </section>
 
       <section class="col-span-4 lg:col-span-1 space-y-4 h-full lg:flex flex-col justify-around">
-        <div class="font-bold text-base lg:text-lg">
+        <div class="font-bold text-lg">
           Get In Touch
         </div>
-        <ul class="space-y-2">
-          <li class="font-bold text-base">Address: <span class="font-normal text-sm">1217 3rd St S Suite 105, Nampa, ID
+        <ul class="space-y-4">
+          <li class="font-semibold text-base">Address: <span class="font-normal text-sm">1217 3rd St S Suite 105, Nampa,
+              ID
               83651</span></li>
-          <li class="font-bold text-base">Phone: <span class="font-normal text-sm">xxx-xxx-xxxx</span></li>
-          <li class="font-bold text-base">Email: <span class="font-normal text-sm">email@emai.com</span></li>
+          <li class="font-semibold text-base">Phone: <span class="font-normal text-sm">xxx-xxx-xxxx</span></li>
+          <li class="font-semibold text-base">Email: <span class="font-normal text-sm">email@emai.com</span></li>
         </ul>
         <div class="flex gap-4">
           <a target="_blank" href="https://www.facebook.com/profile.php?id=100090973550375&mibextid=ZbWKwL"
@@ -99,9 +102,16 @@ const services = ref(SERVICE_ITEMS)
       </section> -->
 
 
+
     </div>
-    <div class="bg-fm-blue py-2 lg:py-4 text-center text-white">
-      Copyright 2024 by FocusMassage. All rights reserved
+    <div class="bg-fm-blue py-6 lg:py-12 text-center text-white px-16 space-y-8">
+      <p>
+        Copyright 2024 by FocusMassage. All rights reserved
+      </p>
+
+      <section class="flex flex-col justify-center items-center pb-12">
+        <KylePepButton />
+      </section>
     </div>
   </div>
 </template>

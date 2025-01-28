@@ -7,7 +7,7 @@ import SectionTitle from "./SectionTitle.vue";
 
 <template>
   <SectionLayout width="base">
-    <div class="space-y-16 mb-10">
+    <div class="space-y-16 mb-24">
 
       <SectionTitle>
         Your Specialist

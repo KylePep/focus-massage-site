@@ -40,7 +40,8 @@ onUnmounted(() => {
 
       <!-- Logo -->
       <div class="flex items-center w-full -my-2">
-        <RouterLink :to="{ name: 'Home' }" class="inline-flex items-center px-1 py-1 me-4">
+        <RouterLink :to="{ name: 'Home' }" class="inline-flex items-center px-1 py-1 me-4"
+          @click="showingNavigationDropdown = !showingNavigationDropdown">
           <IconFM class="duration-1000 bg-fm-blue text-fm-orange rounded-full h-16 w-16 p-2" />
         </RouterLink>
         <h1 class="font-serif text-2xl lg:text-4xl">Focus Massage <span class="hidden lg:inline-flex">by Dana</span>
@@ -104,11 +105,13 @@ onUnmounted(() => {
     <div :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }" class="sm:hidden">
       <div class="pt-2 pb-3 space-y-1">
 
-        <ResponsiveNavLink href="About" :active="route.name == 'About'">
+        <ResponsiveNavLink href="About" :active="route.name == 'About'"
+          @click="showingNavigationDropdown = !showingNavigationDropdown">
           About
         </ResponsiveNavLink>
 
-        <ResponsiveNavLink href="Service" :active="route.name == 'Service'">
+        <ResponsiveNavLink href="Service" :active="route.name == 'Service'"
+          @click="showingNavigationDropdown = !showingNavigationDropdown">
           Services
         </ResponsiveNavLink>
         <a target="_blank" href="https://danawhalen.glossgenius.com/services"

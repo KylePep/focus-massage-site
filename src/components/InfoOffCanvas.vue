@@ -11,14 +11,15 @@ const services = ref(SERVICE_ITEMS)
 <template>
   <div class="flex flex-col h-full bg-fm-teal lg:ms-8 z-20 p-4 text-fm-pink">
     <div class="flex font-bold text-xl pb-4">
-      <h1 class="border-b-4 border-fm-orange">
+      <h1 class="border-b-4 border-fm-orange pb-1 w-1/2">
         Services
       </h1>
     </div>
 
     <ul class="space-y-4 pb-4">
       <li v-for="service, index in services">
-        <router-link :to="{ name: 'ServiceDetails', params: { serviceId: index } }" class="border-b-2 pb-1"
+        <router-link :to="{ name: 'ServiceDetails', params: { serviceId: index } }"
+          class="border-b-2 pb-1 hover:text-fm-orange"
           :class="route.params.serviceId == index ? 'border-fm-pink' : 'border-transparent'">
           {{ service.title }}
         </router-link>
@@ -26,13 +27,13 @@ const services = ref(SERVICE_ITEMS)
     </ul>
 
     <div class="flex font-bold text-xl pb-4">
-      <h2 class="border-b-4 border-fm-orange">
+      <h2 class="border-b-4 border-fm-orange pb-1 w-1/2">
         Get In Touch
       </h2>
     </div>
 
-    <div>
-      <ul class="space-y-4">
+    <div class="w-1/2">
+      <ul class=" space-y-4">
         <li class="font-bold text-base text-fm-pink">Address: <span class="font-normal text-sm text-fm-pink">1217 3rd
             St
             S Suite 105,

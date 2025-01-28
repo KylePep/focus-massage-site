@@ -69,7 +69,7 @@ const activeFrame = ref('mission');
 
       </section>
 
-      <section>
+      <section class="lg:py-8">
         <transition name="fade" mode="out-in">
           <template v-if="activeFrame === 'mission'" key="mission">
             <div class="grid grid-cols-2 gap-8 min-h-96 ">
